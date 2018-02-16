@@ -153,7 +153,7 @@
     <resources>
         <image name="dollar_sign" width="800" height="800"/>
         <image name="icon-white" width="32" height="32"/>
-        <image name="vancouver" width="1575" height="2101"/>
+        <image name="vancouver" width="787" height="1050"/>
         <image name="white-lock" width="32" height="32"/>
     </resources>
 </document>
