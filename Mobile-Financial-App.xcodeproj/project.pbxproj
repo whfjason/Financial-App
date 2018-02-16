@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F0BDAD12036805B00DDAD07 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BDAD02036805B00DDAD07 /* RecordViewController.swift */; };
+		0F0BDAD32036A5AB00DDAD07 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BDAD22036A5AB00DDAD07 /* Storyboard2.storyboard */; };
 		0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065332034FD37007C2970 /* AppDelegate.swift */; };
 		0F3065362034FD37007C2970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065352034FD37007C2970 /* ViewController.swift */; };
 		0F3065392034FD37007C2970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3065372034FD37007C2970 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */; };
 		0F3065492034FD37007C2970 /* Mobile_Financial_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065482034FD37007C2970 /* Mobile_Financial_AppTests.swift */; };
 		0F3065542034FD37007C2970 /* Mobile_Financial_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */; };
+		0F46AF102036B2C200844033 /* storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF0F2036B2C200844033 /* storyboard3.storyboard */; };
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0F0BDAD02036805B00DDAD07 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		0F0BDAD22036A5AB00DDAD07 /* Storyboard2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
 		0F3065302034FD37007C2970 /* Mobile-Financial-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile-Financial-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3065332034FD37007C2970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3065352034FD37007C2970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		0F30654F2034FD37007C2970 /* Mobile-Financial-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile-Financial-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Financial_AppUITests.swift; sourceTree = "<group>"; };
 		0F3065552034FD37007C2970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F46AF0F2036B2C200844033 /* storyboard3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = storyboard3.storyboard; sourceTree = "<group>"; };
 		0FBFE21420350DB900C26081 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,8 @@
 				0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */,
 				0F30653F2034FD37007C2970 /* Info.plist */,
 				0F0BDAD02036805B00DDAD07 /* RecordViewController.swift */,
+				0F0BDAD22036A5AB00DDAD07 /* Storyboard2.storyboard */,
+				0F46AF0F2036B2C200844033 /* storyboard3.storyboard */,
 			);
 			path = "Mobile-Financial-App";
 			sourceTree = "<group>";
@@ -238,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F46AF102036B2C200844033 /* storyboard3.storyboard in Resources */,
+				0F0BDAD32036A5AB00DDAD07 /* Storyboard2.storyboard in Resources */,
 				0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */,
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
 				0F3065392034FD37007C2970 /* Main.storyboard in Resources */,
