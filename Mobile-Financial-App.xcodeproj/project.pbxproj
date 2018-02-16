@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0BDAD12036805B00DDAD07 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BDAD02036805B00DDAD07 /* RecordViewController.swift */; };
 		0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065332034FD37007C2970 /* AppDelegate.swift */; };
 		0F3065362034FD37007C2970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065352034FD37007C2970 /* ViewController.swift */; };
 		0F3065392034FD37007C2970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3065372034FD37007C2970 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0BDAD02036805B00DDAD07 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		0F3065302034FD37007C2970 /* Mobile-Financial-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile-Financial-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3065332034FD37007C2970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3065352034FD37007C2970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				0F30653A2034FD37007C2970 /* Assets.xcassets */,
 				0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */,
 				0F30653F2034FD37007C2970 /* Info.plist */,
+				0F0BDAD02036805B00DDAD07 /* RecordViewController.swift */,
 			);
 			path = "Mobile-Financial-App";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
+				0F0BDAD12036805B00DDAD07 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
