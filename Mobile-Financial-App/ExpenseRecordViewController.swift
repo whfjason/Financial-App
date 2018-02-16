@@ -15,6 +15,7 @@ class ExpenseRecordViewController: UIViewController {
     let account = ["Saving",
                    "Checking",
                    "IRA",
+                   "Education Fund",
                    "Emergency Fund",
                    "Insurance",
                    "Stock Investment"]
@@ -53,6 +54,10 @@ class ExpenseRecordViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.title = "Expense Report"
     }
 
 }
