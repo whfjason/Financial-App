@@ -18,6 +18,7 @@
 		0F3065542034FD37007C2970 /* Mobile_Financial_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */; };
 		0F46AF102036B2C200844033 /* storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF0F2036B2C200844033 /* storyboard3.storyboard */; };
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
+		BB43BD442036DA93003453F8 /* expensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43BD432036DA93003453F8 /* expensesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0F3065552034FD37007C2970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F46AF0F2036B2C200844033 /* storyboard3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = storyboard3.storyboard; sourceTree = "<group>"; };
 		0FBFE21420350DB900C26081 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		BB43BD432036DA93003453F8 /* expensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = expensesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				0F30653F2034FD37007C2970 /* Info.plist */,
 				0F0BDAD02036805B00DDAD07 /* RecordViewController.swift */,
 				0F0BDAD22036A5AB00DDAD07 /* Storyboard2.storyboard */,
+				BB43BD432036DA93003453F8 /* expensesViewController.swift */,
 				0F46AF0F2036B2C200844033 /* storyboard3.storyboard */,
 			);
 			path = "Mobile-Financial-App";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB43BD442036DA93003453F8 /* expensesViewController.swift in Sources */,
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
