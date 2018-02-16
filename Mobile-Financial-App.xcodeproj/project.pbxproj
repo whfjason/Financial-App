@@ -14,6 +14,7 @@
 		0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */; };
 		0F3065492034FD37007C2970 /* Mobile_Financial_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065482034FD37007C2970 /* Mobile_Financial_AppTests.swift */; };
 		0F3065542034FD37007C2970 /* Mobile_Financial_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */; };
+		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0F30654F2034FD37007C2970 /* Mobile-Financial-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile-Financial-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Financial_AppUITests.swift; sourceTree = "<group>"; };
 		0F3065552034FD37007C2970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FBFE21420350DB900C26081 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				0F3065332034FD37007C2970 /* AppDelegate.swift */,
 				0F3065352034FD37007C2970 /* ViewController.swift */,
+				0FBFE21420350DB900C26081 /* LoginTextField.swift */,
 				0F3065372034FD37007C2970 /* Main.storyboard */,
 				0F30653A2034FD37007C2970 /* Assets.xcassets */,
 				0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
 			);
@@ -507,6 +511,7 @@
 				0F30655A2034FD37007C2970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F30655B2034FD37007C2970 /* Build configuration list for PBXNativeTarget "Mobile-Financial-AppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				0F30655D2034FD37007C2970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F30655E2034FD37007C2970 /* Build configuration list for PBXNativeTarget "Mobile-Financial-AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				0F3065602034FD37007C2970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
