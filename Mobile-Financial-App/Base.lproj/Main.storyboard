@@ -73,7 +73,7 @@
                                             <segue destination="c36-WM-Iub" kind="show" id="K60-9T-kpl"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnY-zE-PsA" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnY-zE-PsA" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
                                         <rect key="frame" x="43" y="260" width="289" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
