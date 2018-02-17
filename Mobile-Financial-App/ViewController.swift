@@ -7,16 +7,44 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var emailField: LoginTextField!
+    @IBOutlet weak var passwordField: LoginTextField!
+    
+    @IBAction func loginButton(_ sender: UIButton) {
+        login()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @objc func login() {
+        guard let email = emailField.text else { return }
+        guard let pwd = passwordField.text else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: pwd) { user, error in
+            if error == nil {
+                self.performSegue(withIdentifier: "loginToExpenseSegue", sender: self)
+                print("login was successful")
+            } else {
+                let loginErrorAlert = UIAlertController(title: "Login Error", message: "\(error!.localizedDescription) Please try again.", preferredStyle: .alert)
+                loginErrorAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(loginErrorAlert, animated: true, completion: nil)
+                return
+            }
+        }
     }
     
 }

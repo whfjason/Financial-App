@@ -14,7 +14,7 @@
 		0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */; };
 		0F3065492034FD37007C2970 /* Mobile_Financial_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065482034FD37007C2970 /* Mobile_Financial_AppTests.swift */; };
 		0F3065542034FD37007C2970 /* Mobile_Financial_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */; };
-		0F46AF102036B2C200844033 /* storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF0F2036B2C200844033 /* storyboard3.storyboard */; };
+		0F46AF102036B2C200844033 /* registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF0F2036B2C200844033 /* registration.storyboard */; };
 		0F46AF122036E02B00844033 /* michael.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF112036E02B00844033 /* michael.storyboard */; };
 		0F46AF142036E07100844033 /* eric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF132036E07100844033 /* eric.storyboard */; };
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
@@ -56,7 +56,7 @@
 		0F30654F2034FD37007C2970 /* Mobile-Financial-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile-Financial-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Financial_AppUITests.swift; sourceTree = "<group>"; };
 		0F3065552034FD37007C2970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F46AF0F2036B2C200844033 /* storyboard3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = storyboard3.storyboard; sourceTree = "<group>"; };
+		0F46AF0F2036B2C200844033 /* registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = registration.storyboard; sourceTree = "<group>"; };
 		0F46AF112036E02B00844033 /* michael.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = michael.storyboard; sourceTree = "<group>"; };
 		0F46AF132036E07100844033 /* eric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = eric.storyboard; sourceTree = "<group>"; };
 		0FBFE21420350DB900C26081 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
@@ -124,13 +124,13 @@
 			children = (
 				CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */,
 				0F3065332034FD37007C2970 /* AppDelegate.swift */,
-				0F3065352034FD37007C2970 /* ViewController.swift */,
 				0FBFE21420350DB900C26081 /* LoginTextField.swift */,
+				0F3065352034FD37007C2970 /* ViewController.swift */,
 				0F3065372034FD37007C2970 /* Main.storyboard */,
 				0F30653A2034FD37007C2970 /* Assets.xcassets */,
 				0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */,
 				0F30653F2034FD37007C2970 /* Info.plist */,
-				0F46AF0F2036B2C200844033 /* storyboard3.storyboard */,
+				0F46AF0F2036B2C200844033 /* registration.storyboard */,
 				CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */,
 				0F46AF112036E02B00844033 /* michael.storyboard */,
 				0F46AF132036E07100844033 /* eric.storyboard */,
@@ -289,7 +289,7 @@
 			files = (
 				0F46AF122036E02B00844033 /* michael.storyboard in Resources */,
 				CBC54CEE20370E3E00C00CE0 /* GoogleService-Info.plist in Resources */,
-				0F46AF102036B2C200844033 /* storyboard3.storyboard in Resources */,
+				0F46AF102036B2C200844033 /* registration.storyboard in Resources */,
 				0F46AF142036E07100844033 /* eric.storyboard in Resources */,
 				0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */,
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
