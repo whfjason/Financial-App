@@ -12,13 +12,11 @@ class ExpenseRecordViewController: UIViewController {
     
     @IBOutlet weak var expenseReportType: UITextField!
 
-    let account = ["Saving",
-                   "Checking",
-                   "IRA",
-                   "Education Fund",
-                   "Emergency Fund",
-                   "Insurance",
-                   "Stock Investment"]
+    let account = ["Checking CIBC",
+                   "Credit CIBC",
+                   "Credit RBC",
+                   "Credit TD"
+                   ]
     
     var selectedAccount: String?
 
