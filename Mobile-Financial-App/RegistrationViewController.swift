@@ -7,8 +7,6 @@
 //
 
 // TODO: Implement a successfully login page (aka homepage) and redirect to expense report interface
-// TODO: Move expense report interface out of login button
-// Reminder: Do not push to github! Other terminal may not be compatible with Firebase
 
 import Foundation
 import UIKit
