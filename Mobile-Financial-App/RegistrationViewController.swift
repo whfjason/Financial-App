@@ -38,7 +38,10 @@ class RegistrationViewController: UIViewController {
             if error == nil && user != nil {
                 print("User created")
             } else {
-                print("Error creating user: \(error!.localizedDescription)")
+                let signupErrorAlert = UIAlertController(title: "Error", message: "\(error!.localizedDescription) Please try again.", preferredStyle: .alert)
+                signupErrorAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
+                self.present(signupErrorAlert, animated: true, completion: nil)
+                return
             }
         }
     }
@@ -50,4 +53,6 @@ class RegistrationViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.title = "Registration"
     }
+    
+    
 }
