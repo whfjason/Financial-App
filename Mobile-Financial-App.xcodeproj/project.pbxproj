@@ -14,7 +14,7 @@
 		0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */; };
 		0F3065492034FD37007C2970 /* Mobile_Financial_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065482034FD37007C2970 /* Mobile_Financial_AppTests.swift */; };
 		0F3065542034FD37007C2970 /* Mobile_Financial_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */; };
-		0F46AF102036B2C200844033 /* storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF0F2036B2C200844033 /* storyboard3.storyboard */; };
+		0F46AF102036B2C200844033 /* registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF0F2036B2C200844033 /* registration.storyboard */; };
 		0F46AF122036E02B00844033 /* michael.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF112036E02B00844033 /* michael.storyboard */; };
 		0F46AF142036E07100844033 /* eric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF132036E07100844033 /* eric.storyboard */; };
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
@@ -22,6 +22,7 @@
 		CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */; };
 		CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */; };
 		CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */; };
+		CBC54CEE20370E3E00C00CE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,7 @@
 		0F30654F2034FD37007C2970 /* Mobile-Financial-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile-Financial-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Financial_AppUITests.swift; sourceTree = "<group>"; };
 		0F3065552034FD37007C2970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F46AF0F2036B2C200844033 /* storyboard3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = storyboard3.storyboard; sourceTree = "<group>"; };
+		0F46AF0F2036B2C200844033 /* registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = registration.storyboard; sourceTree = "<group>"; };
 		0F46AF112036E02B00844033 /* michael.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = michael.storyboard; sourceTree = "<group>"; };
 		0F46AF132036E07100844033 /* eric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = eric.storyboard; sourceTree = "<group>"; };
 		0FBFE21420350DB900C26081 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseRecordViewController.swift; sourceTree = "<group>"; };
 		CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpenseReportStoryBoard.storyboard; sourceTree = "<group>"; };
 		CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAE2B699531470DD6B0B089 /* Pods_Mobile_Financial_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,8 @@
 				0F3065472034FD37007C2970 /* Mobile-Financial-AppTests */,
 				0F3065522034FD37007C2970 /* Mobile-Financial-AppUITests */,
 				0F3065312034FD37007C2970 /* Products */,
+				42DBC12EB609EBB3B2B0DDCA /* Pods */,
+				858289BC4612F9A5B72A1627 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,14 +118,15 @@
 		0F3065322034FD37007C2970 /* Mobile-Financial-App */ = {
 			isa = PBXGroup;
 			children = (
+				CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */,
 				0F3065332034FD37007C2970 /* AppDelegate.swift */,
-				0F3065352034FD37007C2970 /* ViewController.swift */,
 				0FBFE21420350DB900C26081 /* LoginTextField.swift */,
+				0F3065352034FD37007C2970 /* ViewController.swift */,
 				0F3065372034FD37007C2970 /* Main.storyboard */,
 				0F30653A2034FD37007C2970 /* Assets.xcassets */,
 				0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */,
 				0F30653F2034FD37007C2970 /* Info.plist */,
-				0F46AF0F2036B2C200844033 /* storyboard3.storyboard */,
+				0F46AF0F2036B2C200844033 /* registration.storyboard */,
 				CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */,
 				0F46AF112036E02B00844033 /* michael.storyboard */,
 				0F46AF132036E07100844033 /* eric.storyboard */,
@@ -149,6 +155,25 @@
 			path = "Mobile-Financial-AppUITests";
 			sourceTree = "<group>";
 		};
+		42DBC12EB609EBB3B2B0DDCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98E2128F42CF77C95AA63094 /* Pods-Mobile-Financial-App.debug.xcconfig */,
+				22FF31878592AD7150CDF3F6 /* Pods-Mobile-Financial-App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		858289BC4612F9A5B72A1627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFDF466FE353ECA1F1900CBD /* Pods_Mobile_Financial_App.framework */,
+				533DA835E4BA6B6C65CF66DE /* Pods_Mobile_Financial_AppTests.framework */,
+				A551C5B80CBFE612F50FB983 /* Pods_Mobile_Financial_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F3065582034FD37007C2970 /* Build configuration list for PBXNativeTarget "Mobile-Financial-App" */;
 			buildPhases = (
+				2BF9B00A504B9E13BB6E41B7 /* [CP] Check Pods Manifest.lock */,
 				0F30652C2034FD37007C2970 /* Sources */,
 				0F30652D2034FD37007C2970 /* Frameworks */,
 				0F30652E2034FD37007C2970 /* Resources */,
+				116217788A17CDC50298F328 /* [CP] Embed Pods Frameworks */,
+				1B68307A99C2D6E1D8B1CBCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,7 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F46AF122036E02B00844033 /* michael.storyboard in Resources */,
-				0F46AF102036B2C200844033 /* storyboard3.storyboard in Resources */,
+				CBC54CEE20370E3E00C00CE0 /* GoogleService-Info.plist in Resources */,
+				0F46AF102036B2C200844033 /* registration.storyboard in Resources */,
 				0F46AF142036E07100844033 /* eric.storyboard in Resources */,
 				0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */,
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
@@ -281,6 +310,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		116217788A17CDC50298F328 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B68307A99C2D6E1D8B1CBCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BF9B00A504B9E13BB6E41B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mobile-Financial-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F30652C2034FD37007C2970 /* Sources */ = {
@@ -444,6 +531,7 @@
 		};
 		0F3065592034FD37007C2970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E2128F42CF77C95AA63094 /* Pods-Mobile-Financial-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Mobile-Financial-App/Info.plist";
@@ -456,6 +544,7 @@
 		};
 		0F30655A2034FD37007C2970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22FF31878592AD7150CDF3F6 /* Pods-Mobile-Financial-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Mobile-Financial-App/Info.plist";
