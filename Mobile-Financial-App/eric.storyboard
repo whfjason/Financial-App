@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-Kl-9cr">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-Kl-9cr" customClass="ShowBalance">
                                 <rect key="frame" x="87" y="356" width="200" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,7 +47,7 @@
                                     <color key="titleColor" red="0.66784731220000004" green="0.1000449972" blue="0.0067004914620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="firstButton:" destination="4sZ-2i-UL7" eventType="touchUpInside" id="OTZ-tE-MDk"/>
+                                    <action selector="firstButton:" destination="4sZ-2i-UL7" eventType="touchUpInside" id="r8e-bF-q0t"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -11,7 +11,9 @@ import UIKit
 class fViewController: UIViewController{
    
     @IBOutlet var firstButton: UIButton!
+   
     @IBOutlet var secondButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
