@@ -34,7 +34,7 @@ class passwordChange: UIViewController {
         if Auth.auth().currentUser != nil {
             // User is signed in.
             // Compare if provided passwords are match
-            if ((nPW.elementsEqual(rePW)) != true)
+            if (nPW == rePW)
             {
                 let missMatchAlert = UIAlertController(title: "MismatchPW!", message: "Your passwords typed are not matched", preferredStyle: .alert)
                 missMatchAlert.addAction(UIAlertAction(title: "Mismatch", style: .default, handler: nil))
