@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="886" y="-94"/>
         </scene>
-        <!--michael-->
+        <!--passwordChange-->
         <scene sceneID="VF2-tV-xSs">
             <objects>
-                <viewControllerPlaceholder storyboardName="michael" id="Gau-8j-OIV" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="passwordChange" id="Gau-8j-OIV" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chd-MD-5ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1086" y="-295"/>
