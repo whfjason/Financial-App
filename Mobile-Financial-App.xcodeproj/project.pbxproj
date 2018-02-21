@@ -137,6 +137,7 @@
 				4C068A06203BB87600A2E688 /* passwordChange.swift */,
 				0F46AF112036E02B00844033 /* passwordChange.storyboard */,
 				0F46AF132036E07100844033 /* eric.storyboard */,
+				A2F6C8C6203803D30002EA42 /* ShowBalance.swift */,
 				CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */,
 				CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */,
 			);
@@ -384,6 +385,7 @@
 				CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */,
 				4C068A07203BB87600A2E688 /* passwordChange.swift in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
+				A2F6C8C7203803D30002EA42 /* ShowBalance.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
 				CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */,
 			);
