@@ -18,13 +18,14 @@
 		0F46AF122036E02B00844033 /* passwordChange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF112036E02B00844033 /* passwordChange.storyboard */; };
 		0F46AF142036E07100844033 /* eric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF132036E07100844033 /* eric.storyboard */; };
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
-		4C068A07203BB87600A2E688 /* passwordChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C068A06203BB87600A2E688 /* passwordChange.swift */; };
-		4C16F9C2203D140B00A2B4C0 /* ShowBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C16F9C1203D140B00A2B4C0 /* ShowBalance.swift */; };
-		ACAE2B699531470DD6B0B089 /* Pods_Mobile_Financial_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF466FE353ECA1F1900CBD /* Pods_Mobile_Financial_App.framework */; };
+		4C068A07203BB87600A2E688 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		4C16F9C2203D140B00A2B4C0 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */; };
 		CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */; };
 		CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */; };
 		CBC54CEE20370E3E00C00CE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */; };
+		CBC5F23D203D16B800A60E78 /* passwordChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC5F23B203D16B800A60E78 /* passwordChange.swift */; };
+		CBC5F23E203D16B800A60E78 /* ShowBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC5F23C203D16B800A60E78 /* ShowBalance.swift */; };
 		DD65718FFDDADF69484EA713 /* Pods_Mobile_Financial_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3843273F9500D55C79A07E /* Pods_Mobile_Financial_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,11 +67,12 @@
 		2B3843273F9500D55C79A07E /* Pods_Mobile_Financial_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Financial_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5768264E9DDDE640B96F5 /* Pods-Mobile-Financial-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.release.xcconfig"; sourceTree = "<group>"; };
 		8BB5B68F92D4D4A9256F0952 /* Pods-Mobile-Financial-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.debug.xcconfig"; sourceTree = "<group>"; };
-		A2F6C8C6203803D30002EA42 /* ShowBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBalance.swift; sourceTree = "<group>"; };
 		CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseRecordViewController.swift; sourceTree = "<group>"; };
 		CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpenseReportStoryBoard.storyboard; sourceTree = "<group>"; };
 		CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CBC5F23B203D16B800A60E78 /* passwordChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordChange.swift; sourceTree = "<group>"; };
+		CBC5F23C203D16B800A60E78 /* ShowBalance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowBalance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,10 +136,10 @@
 				0F30653F2034FD37007C2970 /* Info.plist */,
 				0F46AF0F2036B2C200844033 /* registration.storyboard */,
 				CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */,
-				4C068A06203BB87600A2E688 /* passwordChange.swift */,
+				CBC5F23B203D16B800A60E78 /* passwordChange.swift */,
+				CBC5F23C203D16B800A60E78 /* ShowBalance.swift */,
 				0F46AF112036E02B00844033 /* passwordChange.storyboard */,
 				0F46AF132036E07100844033 /* eric.storyboard */,
-				4C16F9C1203D140B00A2B4C0 /* ShowBalance.swift */,
 				CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */,
 				CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */,
 			);
@@ -379,11 +381,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC5F23D203D16B800A60E78 /* passwordChange.swift in Sources */,
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */,
-				4C068A07203BB87600A2E688 /* passwordChange.swift in Sources */,
-				4C16F9C2203D140B00A2B4C0 /* ShowBalance.swift in Sources */,
+				4C068A07203BB87600A2E688 /* (null) in Sources */,
+				4C16F9C2203D140B00A2B4C0 /* (null) in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
+				CBC5F23E203D16B800A60E78 /* ShowBalance.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
 				CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */,
 			);
