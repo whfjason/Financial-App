@@ -15,9 +15,10 @@
 		0F3065492034FD37007C2970 /* Mobile_Financial_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065482034FD37007C2970 /* Mobile_Financial_AppTests.swift */; };
 		0F3065542034FD37007C2970 /* Mobile_Financial_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */; };
 		0F46AF102036B2C200844033 /* registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF0F2036B2C200844033 /* registration.storyboard */; };
-		0F46AF122036E02B00844033 /* michael.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF112036E02B00844033 /* michael.storyboard */; };
+		0F46AF122036E02B00844033 /* passwordChange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF112036E02B00844033 /* passwordChange.storyboard */; };
 		0F46AF142036E07100844033 /* eric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF132036E07100844033 /* eric.storyboard */; };
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
+		4C068A07203BB87600A2E688 /* passwordChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C068A06203BB87600A2E688 /* passwordChange.swift */; };
 		ACAE2B699531470DD6B0B089 /* Pods_Mobile_Financial_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF466FE353ECA1F1900CBD /* Pods_Mobile_Financial_App.framework */; };
 		CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */; };
 		CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */; };
@@ -57,10 +58,11 @@
 		0F3065532034FD37007C2970 /* Mobile_Financial_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Financial_AppUITests.swift; sourceTree = "<group>"; };
 		0F3065552034FD37007C2970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F46AF0F2036B2C200844033 /* registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = registration.storyboard; sourceTree = "<group>"; };
-		0F46AF112036E02B00844033 /* michael.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = michael.storyboard; sourceTree = "<group>"; };
+		0F46AF112036E02B00844033 /* passwordChange.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = passwordChange.storyboard; sourceTree = "<group>"; };
 		0F46AF132036E07100844033 /* eric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = eric.storyboard; sourceTree = "<group>"; };
 		0FBFE21420350DB900C26081 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		22FF31878592AD7150CDF3F6 /* Pods-Mobile-Financial-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.release.xcconfig"; sourceTree = "<group>"; };
+		4C068A06203BB87600A2E688 /* passwordChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordChange.swift; sourceTree = "<group>"; };
 		533DA835E4BA6B6C65CF66DE /* Pods_Mobile_Financial_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Financial_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E2128F42CF77C95AA63094 /* Pods-Mobile-Financial-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.debug.xcconfig"; sourceTree = "<group>"; };
 		A551C5B80CBFE612F50FB983 /* Pods_Mobile_Financial_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Financial_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +134,8 @@
 				0F30653F2034FD37007C2970 /* Info.plist */,
 				0F46AF0F2036B2C200844033 /* registration.storyboard */,
 				CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */,
-				0F46AF112036E02B00844033 /* michael.storyboard */,
+				4C068A06203BB87600A2E688 /* passwordChange.swift */,
+				0F46AF112036E02B00844033 /* passwordChange.storyboard */,
 				0F46AF132036E07100844033 /* eric.storyboard */,
 				CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */,
 				CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */,
@@ -287,7 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F46AF122036E02B00844033 /* michael.storyboard in Resources */,
+				0F46AF122036E02B00844033 /* passwordChange.storyboard in Resources */,
 				CBC54CEE20370E3E00C00CE0 /* GoogleService-Info.plist in Resources */,
 				0F46AF102036B2C200844033 /* registration.storyboard in Resources */,
 				0F46AF142036E07100844033 /* eric.storyboard in Resources */,
@@ -379,6 +382,7 @@
 			files = (
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */,
+				4C068A07203BB87600A2E688 /* passwordChange.swift in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
 				CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */,
