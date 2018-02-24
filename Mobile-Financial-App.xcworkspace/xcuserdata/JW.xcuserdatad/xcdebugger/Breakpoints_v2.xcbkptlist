@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Mobile-Financial-App/RegistrationViewController.swift"
-            timestampString = "540487937.156211"
+            filePath = "Mobile-Financial-AppUITests/Mobile_Financial_AppUITests.swift"
+            timestampString = "541150373.231208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "testSignUpValidation()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -9,18 +9,12 @@
 import XCTest
 
 class Mobile_Financial_AppUITests: XCTestCase {
+    
+    var app: XCUIApplication!
         
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
     override func tearDown() {
@@ -28,9 +22,31 @@ class Mobile_Financial_AppUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSignUpValidation() {
+        let app = XCUIApplication()
+        app.launch()
+        app.buttons["SIGN UP"].tap()
+        app.buttons["Submit"].tap()
+        XCTAssert(app.alerts.element.staticTexts["The password must be 6 characters long or more. Please try again."].exists)
     }
     
+    func testLoginValidation() {
+        let app = XCUIApplication()
+        app.launch()
+        app.buttons["LOG IN"].tap()
+        XCTAssert(app.alerts.element.staticTexts["The password is invalid or the user does not have a password. Please try again."].exists)
+    }
+    
+//    func testLoginSegue() {
+//        isAccessibilityElement = false
+//        let app = XCUIApplication()
+//        app.launch()
+//        app.buttons["LOG IN"].tap()
+//        let email = app.textFields["Email"]
+//        email.tap()
+//        app.typeText("2@2.2")
+//        let password = app.textFields["Password"]
+//        password.tap()
+//        app.typeText("222222")
+//    }
 }
