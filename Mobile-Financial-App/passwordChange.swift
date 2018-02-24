@@ -34,7 +34,7 @@ class passwordChange: UIViewController {
         if Auth.auth().currentUser != nil {
             // User is signed in.
             // Compare if provided passwords are match
-            if (nPW == rePW)
+            if (nPW != rePW)
             {
                 let missMatchAlert = UIAlertController(title: "MismatchPW!", message: "Your passwords typed are not matched", preferredStyle: .alert)
                 missMatchAlert.addAction(UIAlertAction(title: "Mismatch", style: .default, handler: nil))
@@ -43,7 +43,7 @@ class passwordChange: UIViewController {
             }
             //update the password
             Auth.auth().currentUser?.updatePassword(to: nPW) { (error) in
-                if error == nil {
+                if (error == nil) {
                     let changePasswordSuccessAlert = UIAlertController(title: "Password changed successfully!", message: "You can now login to the app with your new password!", preferredStyle: .alert)
                     changePasswordSuccessAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
                     self.present(changePasswordSuccessAlert, animated: true, completion: nil)
