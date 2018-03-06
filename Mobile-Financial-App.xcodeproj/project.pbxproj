@@ -20,6 +20,8 @@
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
 		4C068A07203BB87600A2E688 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		4C16F9C2203D140B00A2B4C0 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB687D04204E622700E440C1 /* InterestRate.storyboard */; };
+		BB687D07204E624200E440C1 /* InterestRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB687D06204E624200E440C1 /* InterestRateViewController.swift */; };
 		BBB26C2C204E135900D05A30 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB26C2B204E135900D05A30 /* Menu.storyboard */; };
 		BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB26C2D204E170200D05A30 /* MenuViewController.swift */; };
 		CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */; };
@@ -69,6 +71,8 @@
 		2B3843273F9500D55C79A07E /* Pods_Mobile_Financial_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Financial_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5768264E9DDDE640B96F5 /* Pods-Mobile-Financial-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.release.xcconfig"; sourceTree = "<group>"; };
 		8BB5B68F92D4D4A9256F0952 /* Pods-Mobile-Financial-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.debug.xcconfig"; sourceTree = "<group>"; };
+		BB687D04204E622700E440C1 /* InterestRate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InterestRate.storyboard; sourceTree = "<group>"; };
+		BB687D06204E624200E440C1 /* InterestRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestRateViewController.swift; sourceTree = "<group>"; };
 		BBB26C2B204E135900D05A30 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		BBB26C2D204E170200D05A30 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseRecordViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				0F46AF132036E07100844033 /* eric.storyboard */,
 				CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */,
 				CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */,
+				BB687D04204E622700E440C1 /* InterestRate.storyboard */,
+				BB687D06204E624200E440C1 /* InterestRateViewController.swift */,
 				BBB26C2D204E170200D05A30 /* MenuViewController.swift */,
 				BBB26C2B204E135900D05A30 /* Menu.storyboard */,
 			);
@@ -305,6 +311,7 @@
 				0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */,
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
 				CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */,
+				BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */,
 				0F3065392034FD37007C2970 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +399,7 @@
 				BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */,
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */,
+				BB687D07204E624200E440C1 /* InterestRateViewController.swift in Sources */,
 				4C068A07203BB87600A2E688 /* (null) in Sources */,
 				4C16F9C2203D140B00A2B4C0 /* (null) in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
