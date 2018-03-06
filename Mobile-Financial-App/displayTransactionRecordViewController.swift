@@ -48,6 +48,8 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         refTransaction = Database.database().reference().child("transaction")
+        let auth_userId = Auth.auth().currentUser!.uid
+        var transaction = TransactionModel(payableTo: "", amount: "")
         
         refTransaction.observe(DataEventType.value, with: { (snapshot) in
             // if the reference have some values
@@ -58,15 +60,21 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                 
                 // iterate through all the values
                 for record in snapshot.children.allObjects as! [DataSnapshot] {
+                    
                     // getting values
                     let transactionObject = record.value as? [String: AnyObject]
-                    let transactionName = transactionObject?["payableTo"]
-                    let transactionAmount = transactionObject?["amount"]
+                    let transaction_uid = transactionObject?["userId"]! as! String
                     
-                    // creating artist object with model and fetched values
-                    let transaction = TransactionModel(payableTo: transactionName as! String?,
-                                                       amount: transactionAmount as! String?)
-                    
+                    if (transaction_uid != auth_userId) {
+                        break
+                    } else {
+                        let transactionName = transactionObject?["payableTo"]
+                        let transactionAmount = transactionObject?["amount"]
+                        
+                        // creating artist object with model and fetched values
+                        transaction = TransactionModel(payableTo: transactionName as! String?,
+                                                           amount: transactionAmount as! String?)
+                    }
                     // appending it to the list
                     self.transactionList.append(transaction)
                 }

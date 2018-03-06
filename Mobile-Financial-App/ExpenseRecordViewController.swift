@@ -34,7 +34,7 @@ class ExpenseRecordViewController: UIViewController {
         createToolbar()
         dbReference = Database.database().reference()
         
-        testFunction()
+//        testFunction()
     }
     
     @IBAction func addTransaction(_ sender: UIButton) {
@@ -57,25 +57,25 @@ class ExpenseRecordViewController: UIViewController {
     }
     
     // Test function displays all the transaction made by the current authorized user
-    func testFunction() {
-        let refTransaction = Database.database().reference().child("transaction")
-        refTransaction.observe(DataEventType.value, with: { (snapshot) in
-            if snapshot.childrenCount > 0 {
-                print("---------- breakpoint checker ----------")
-                for record in snapshot.children.allObjects as! [DataSnapshot] {
-                    let transactionObject = record.value as? [String: AnyObject]
-                    let userId = transactionObject?["userId"]! as!String
-                    print(userId)
-                    if (userId != Auth.auth().currentUser!.uid) {
-                        break;
-                    } else {
-                        print(transactionObject?["amount"]! ?? String.self)
-                        print(transactionObject?["payableTo"] ?? String.self)
-                    }
-                }
-            }
-        })
-    }
+//    func testFunction() {
+//        let refTransaction = Database.database().reference().child("transaction")
+//        refTransaction.observe(DataEventType.value, with: { (snapshot) in
+//            if snapshot.childrenCount > 0 {
+//                print("---------- breakpoint checker ----------")
+//                for record in snapshot.children.allObjects as! [DataSnapshot] {
+//                    let transactionObject = record.value as? [String: AnyObject]
+//                    let userId = transactionObject?["userId"]! as!String
+//                    print(userId)
+//                    if (userId != Auth.auth().currentUser!.uid) {
+//                        break;
+//                    } else {
+//                        print(transactionObject?["amount"]! ?? String.self)
+//                        print(transactionObject?["payableTo"] ?? String.self)
+//                    }
+//                }
+//            }
+//        })
+//    }
     
     func createAccountPicker() {
         
