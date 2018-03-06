@@ -43,7 +43,7 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     
     var refTransaction: DatabaseReference!
     
-    // TODO: Make sure that the transactions returned are belong to the current logged-in user only
+    // TODO: Update transactional record dynamically
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,21 +52,16 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         var transaction = TransactionModel(payableTo: "", amount: "")
         
         refTransaction.observe(DataEventType.value, with: { (snapshot) in
-            // if the reference have some values
             if snapshot.childrenCount > 0 {
                 
-                // clearing the list
                 self.transactionList.removeAll()
                 
-                // iterate through all the values
                 for record in snapshot.children.allObjects as! [DataSnapshot] {
-                    
-                    // getting values
                     let transactionObject = record.value as? [String: AnyObject]
                     let transaction_uid = transactionObject?["userId"]! as! String
                     
                     if (transaction_uid != auth_userId) {
-                        break
+                        continue
                     } else {
                         let transactionName = transactionObject?["payableTo"]
                         let transactionAmount = transactionObject?["amount"]
