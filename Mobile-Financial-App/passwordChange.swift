@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import Firebase
+import QuartzCore
 
 class passwordChange: UIViewController {
     
