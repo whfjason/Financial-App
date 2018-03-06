@@ -84,7 +84,6 @@ class ExpenseRecordViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.title = "Transaction Records"
     }
-
 }
 
 extension ExpenseRecordViewController: UIPickerViewDelegate, UIPickerViewDataSource {
