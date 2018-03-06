@@ -18,7 +18,7 @@ class ExpenseRecordViewController: UIViewController {
     
     @IBOutlet weak var accountType: UITextField!
     @IBOutlet weak var transactionAmount: UITextField!
-    @IBOutlet weak var payee: UITextField!
+    @IBOutlet weak var payableTo: UITextField!
     
     // Retrieve all available client expense accounts from database dynamically
     let account = ["Checking",
@@ -33,6 +33,8 @@ class ExpenseRecordViewController: UIViewController {
         createAccountPicker()
         createToolbar()
         dbReference = Database.database().reference()
+        
+        testFunction()
     }
     
     @IBAction func addTransaction(_ sender: UIButton) {
@@ -48,10 +50,31 @@ class ExpenseRecordViewController: UIViewController {
 
         let transactionDetails = ["transactionId": tid,
                                   "timestamp": timestamp,
-                                  "payee": payee.text! as String,
-                                  "account": accountType.text! as String,
+                                  "payableTo": payableTo.text! as String,
+                                  "fromAccount": accountType.text! as String,
                                   "amount": transactionAmount.text! as String] as [String : Any]
         transactionRef.updateChildValues(transactionDetails)
+    }
+    
+    // Test function displays all the transaction made by the current authorized user
+    func testFunction() {
+        let refTransaction = Database.database().reference().child("transaction")
+        refTransaction.observe(DataEventType.value, with: { (snapshot) in
+            if snapshot.childrenCount > 0 {
+                print("---------- breakpoint checker ----------")
+                for record in snapshot.children.allObjects as! [DataSnapshot] {
+                    let transactionObject = record.value as? [String: AnyObject]
+                    let userId = transactionObject?["userId"]! as!String
+                    print(userId)
+                    if (userId != Auth.auth().currentUser!.uid) {
+                        break;
+                    } else {
+                        print(transactionObject?["amount"]! ?? String.self)
+                        print(transactionObject?["payableTo"] ?? String.self)
+                    }
+                }
+            }
+        })
     }
     
     func createAccountPicker() {
