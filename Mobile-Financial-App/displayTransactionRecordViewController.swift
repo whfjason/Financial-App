@@ -25,16 +25,12 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // creating a cell using the customer class
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         
-        // the transaction object
         let transaction: TransactionModel
         
-        // getting the transaction of the selected position
         transaction = transactionList[indexPath.row]
         
-        // adding values to labels
         cell.labelTransactionName.text = transaction.payableTo
         cell.labelTransactionAmount.text = transaction.amount
         
@@ -42,8 +38,6 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     }
     
     var refTransaction: DatabaseReference!
-    
-    // TODO: Update transactional record dynamically
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,15 +60,11 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                         let transactionName = transactionObject?["payableTo"]
                         let transactionAmount = transactionObject?["amount"]
                         
-                        // creating artist object with model and fetched values
                         transaction = TransactionModel(payableTo: transactionName as! String?,
                                                            amount: transactionAmount as! String?)
                     }
-                    // appending it to the list
                     self.transactionList.append(transaction)
                 }
-                
-                // reloading the tableview
                 self.tableViewTransaction.reloadData()
             }
         })

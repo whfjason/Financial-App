@@ -49,7 +49,6 @@ class ExpenseRecordViewController: UIViewController {
         let transactionRef = ref.child(tid)
         let timestamp = NSDate().timeIntervalSince1970  // defaulted UTC time
         
-        
         let transactionDetails = ["transactionId": tid,
                                   "userId": uid as String,
                                   "timestamp": timestamp,

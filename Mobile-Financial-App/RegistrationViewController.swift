@@ -46,7 +46,7 @@ class RegistrationViewController: UIViewController {
                 let userEmail: String = email
                 let userName: String = name
                 
-                self.dbReference.child("user").child("uid_"+userId).setValue(["userId": userId,
+                self.dbReference.child("user").child(userId).setValue(["userId": userId,
                                                                               "email": userEmail,
                                                                               "name": userName])
                 return
