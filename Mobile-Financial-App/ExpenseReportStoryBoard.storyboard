@@ -104,11 +104,20 @@
                         <outlet property="accountType" destination="AYY-Vl-Hzk" id="OqY-9h-kB6"/>
                         <outlet property="payableTo" destination="FIX-B9-Izz" id="npf-NN-LZI"/>
                         <outlet property="transactionAmount" destination="3f5-oT-CLm" id="MHU-Hv-Psy"/>
+                        <segue destination="elU-Pd-TIk" kind="show" identifier="addTransactionToFullRecord" id="6wc-ZT-Mtp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYC-2O-pOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-199.19999999999999" y="79.610194902548727"/>
+        </scene>
+        <!--DisplayTransactionRecord-->
+        <scene sceneID="I0s-sK-uF1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DisplayTransactionRecord" id="elU-Pd-TIk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cS-4h-x5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-129" y="515"/>
         </scene>
     </scenes>
     <resources>

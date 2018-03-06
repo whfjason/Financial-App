@@ -11,6 +11,8 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 
+
+
 class ExpenseRecordViewController: UIViewController {
     
     var dbReference : DatabaseReference!
@@ -34,26 +36,30 @@ class ExpenseRecordViewController: UIViewController {
         createToolbar()
         dbReference = Database.database().reference()
         
-//        testFunction()
+//      testFunction()
     }
     
     @IBAction func addTransaction(_ sender: UIButton) {
         addTransactionToDB()
+        //
     }
     
     func addTransactionToDB() {
         let uid = Auth.auth().currentUser!.uid;
-        let uidRef = dbReference.child("user").child("uid_"+uid)
-        let tid = uidRef.childByAutoId().key
-        let transactionRef = uidRef.child("tid_"+tid)
-        let timestamp = NSDate().timeIntervalSince1970
-
+        let ref = dbReference.child("transaction")
+        let tid = ref.childByAutoId().key
+        let transactionRef = ref.child(tid)
+        let timestamp = NSDate().timeIntervalSince1970  // defaulted UTC time
+        
+        
         let transactionDetails = ["transactionId": tid,
+                                  "userId": uid as String,
                                   "timestamp": timestamp,
                                   "payableTo": payableTo.text! as String,
                                   "fromAccount": accountType.text! as String,
                                   "amount": transactionAmount.text! as String] as [String : Any]
         transactionRef.updateChildValues(transactionDetails)
+        self.performSegue(withIdentifier: "addTransactionToFullRecord", sender: self)
     }
     
     // Test function displays all the transaction made by the current authorized user
