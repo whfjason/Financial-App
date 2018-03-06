@@ -52,6 +52,7 @@
                                         </state>
                                         <connections>
                                             <action selector="submitButtonWithSender:" destination="ARt-ti-Y6B" eventType="touchUpInside" id="SDK-gT-D5N"/>
+                                            <segue destination="h6V-W7-SCo" kind="show" id="M4T-Km-bIg"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7z-fb-Nru">
@@ -119,6 +120,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPv-B3-sqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="116.49175412293854"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="OF4-dN-n0f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" id="h6V-W7-SCo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGv-AA-qD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="236"/>
         </scene>
     </scenes>
     <resources>

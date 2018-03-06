@@ -31,24 +31,30 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Expenses"/>
+                                <state key="normal" title="Interest Calculator"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Pel-Fz-OJ7" kind="show" id="OnA-5m-FvY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wN8-bB-inK" customClass="MyButton" customModule="Mobile_Financial_App">
                                 <rect key="frame" x="31" y="542" width="313" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Income"/>
+                                <state key="normal" title="Interact"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="IXI-ct-dU0" kind="show" id="BlG-LS-olM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qy-nT-UGZ">
                                 <rect key="frame" x="31" y="203" width="313" height="105"/>
@@ -57,9 +63,10 @@
                                 <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Show Balance">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Show Balance">
+                                        <fragment content="Expenses Report">
                                             <attributes>
                                                 <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -69,6 +76,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="AYs-ZA-sfT" kind="show" id="ffj-al-KhM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1w-tm-3Jx" customClass="MyButton" customModule="Mobile_Financial_App">
                                 <rect key="frame" x="31" y="316" width="313" height="105"/>
@@ -81,6 +91,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ktn-ZX-UsI" kind="show" id="075-to-eBn"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="8JQ-8r-ekw">
                                 <rect key="frame" x="135" y="95" width="105" height="100"/>
@@ -96,6 +109,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYE-on-xIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1041" y="-334"/>
+        </scene>
+        <!--ExpenseReportStoryBoard-->
+        <scene sceneID="rsh-2N-oEN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExpenseReportStoryBoard" id="AYs-ZA-sfT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHd-d1-3aE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391" y="-426"/>
+        </scene>
+        <!--passwordChange-->
+        <scene sceneID="bSw-um-cxe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="passwordChange" id="ktn-ZX-UsI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ztt-wg-DE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="-315"/>
+        </scene>
+        <!--InterestRate-->
+        <scene sceneID="Vrb-Mc-5W1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InterestRate" id="Pel-Fz-OJ7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z04-Bi-6zI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="-215"/>
+        </scene>
+        <!--InteractStoryBoard-->
+        <scene sceneID="cjV-ur-4HW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InteractStoryBoard" id="IXI-ct-dU0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHE-Jy-3XI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-334" y="-96"/>
         </scene>
     </scenes>
     <resources>
