@@ -11,6 +11,8 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 
+
+
 class ExpenseRecordViewController: UIViewController {
     
     var dbReference : DatabaseReference!
@@ -18,7 +20,7 @@ class ExpenseRecordViewController: UIViewController {
     
     @IBOutlet weak var accountType: UITextField!
     @IBOutlet weak var transactionAmount: UITextField!
-    @IBOutlet weak var payee: UITextField!
+    @IBOutlet weak var payableTo: UITextField!
     
     // Retrieve all available client expense accounts from database dynamically
     let account = ["Checking",
@@ -33,26 +35,53 @@ class ExpenseRecordViewController: UIViewController {
         createAccountPicker()
         createToolbar()
         dbReference = Database.database().reference()
+        
+//      testFunction()
     }
     
     @IBAction func addTransaction(_ sender: UIButton) {
         addTransactionToDB()
+        //
     }
     
     func addTransactionToDB() {
         let uid = Auth.auth().currentUser!.uid;
-        let uidRef = dbReference.child("user").child("uid_"+uid)
-        let tid = uidRef.childByAutoId().key
-        let transactionRef = uidRef.child("tid_"+tid)
-        let timestamp = NSDate().timeIntervalSince1970
-
+        let ref = dbReference.child("transaction")
+        let tid = ref.childByAutoId().key
+        let transactionRef = ref.child(tid)
+        let timestamp = NSDate().timeIntervalSince1970  // defaulted UTC time
+        
+        
         let transactionDetails = ["transactionId": tid,
+                                  "userId": uid as String,
                                   "timestamp": timestamp,
-                                  "payee": payee.text! as String,
-                                  "account": accountType.text! as String,
+                                  "payableTo": payableTo.text! as String,
+                                  "fromAccount": accountType.text! as String,
                                   "amount": transactionAmount.text! as String] as [String : Any]
         transactionRef.updateChildValues(transactionDetails)
+        self.performSegue(withIdentifier: "addTransactionToFullRecord", sender: self)
     }
+    
+    // Test function displays all the transaction made by the current authorized user
+//    func testFunction() {
+//        let refTransaction = Database.database().reference().child("transaction")
+//        refTransaction.observe(DataEventType.value, with: { (snapshot) in
+//            if snapshot.childrenCount > 0 {
+//                print("---------- breakpoint checker ----------")
+//                for record in snapshot.children.allObjects as! [DataSnapshot] {
+//                    let transactionObject = record.value as? [String: AnyObject]
+//                    let userId = transactionObject?["userId"]! as!String
+//                    print(userId)
+//                    if (userId != Auth.auth().currentUser!.uid) {
+//                        break;
+//                    } else {
+//                        print(transactionObject?["amount"]! ?? String.self)
+//                        print(transactionObject?["payableTo"] ?? String.self)
+//                    }
+//                }
+//            }
+//        })
+//    }
     
     func createAccountPicker() {
         
