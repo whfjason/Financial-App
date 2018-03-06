@@ -35,8 +35,6 @@ class ExpenseRecordViewController: UIViewController {
         createAccountPicker()
         createToolbar()
         dbReference = Database.database().reference()
-        
-//      testFunction()
     }
     
     @IBAction func addTransaction(_ sender: UIButton) {
@@ -61,27 +59,6 @@ class ExpenseRecordViewController: UIViewController {
         transactionRef.updateChildValues(transactionDetails)
         self.performSegue(withIdentifier: "addTransactionToFullRecord", sender: self)
     }
-    
-    // Test function displays all the transaction made by the current authorized user
-//    func testFunction() {
-//        let refTransaction = Database.database().reference().child("transaction")
-//        refTransaction.observe(DataEventType.value, with: { (snapshot) in
-//            if snapshot.childrenCount > 0 {
-//                print("---------- breakpoint checker ----------")
-//                for record in snapshot.children.allObjects as! [DataSnapshot] {
-//                    let transactionObject = record.value as? [String: AnyObject]
-//                    let userId = transactionObject?["userId"]! as!String
-//                    print(userId)
-//                    if (userId != Auth.auth().currentUser!.uid) {
-//                        break;
-//                    } else {
-//                        print(transactionObject?["amount"]! ?? String.self)
-//                        print(transactionObject?["payableTo"] ?? String.self)
-//                    }
-//                }
-//            }
-//        })
-//    }
     
     func createAccountPicker() {
         
