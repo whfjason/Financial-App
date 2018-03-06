@@ -24,6 +24,10 @@
 		BB687D07204E624200E440C1 /* InterestRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB687D06204E624200E440C1 /* InterestRateViewController.swift */; };
 		BBB26C2C204E135900D05A30 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB26C2B204E135900D05A30 /* Menu.storyboard */; };
 		BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB26C2D204E170200D05A30 /* MenuViewController.swift */; };
+		CB32B52A204F370C0096290D /* DisplayTransactionRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */; };
+		CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B528204F370C0096290D /* TransactionModel.swift */; };
+		CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */; };
+		CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */; };
 		CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */; };
 		CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */; };
 		CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */; };
@@ -75,6 +79,10 @@
 		BB687D06204E624200E440C1 /* InterestRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestRateViewController.swift; sourceTree = "<group>"; };
 		BBB26C2B204E135900D05A30 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		BBB26C2D204E170200D05A30 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayTransactionRecord.storyboard; sourceTree = "<group>"; };
+		CB32B528204F370C0096290D /* TransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayTransactionRecordViewController.swift; sourceTree = "<group>"; };
 		CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseRecordViewController.swift; sourceTree = "<group>"; };
 		CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpenseReportStoryBoard.storyboard; sourceTree = "<group>"; };
 		CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +146,10 @@
 				0F3065332034FD37007C2970 /* AppDelegate.swift */,
 				0FBFE21420350DB900C26081 /* LoginTextField.swift */,
 				0F3065352034FD37007C2970 /* ViewController.swift */,
+				CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */,
+				CB32B528204F370C0096290D /* TransactionModel.swift */,
+				CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */,
+				CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */,
 				0F3065372034FD37007C2970 /* Main.storyboard */,
 				0F30653A2034FD37007C2970 /* Assets.xcassets */,
 				0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */,
@@ -310,6 +322,7 @@
 				0F46AF142036E07100844033 /* eric.storyboard in Resources */,
 				0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */,
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
+				CB32B52A204F370C0096290D /* DisplayTransactionRecord.storyboard in Resources */,
 				CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */,
 				BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */,
 				0F3065392034FD37007C2970 /* Main.storyboard in Resources */,
@@ -397,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */,
 				CBC5F23D203D16B800A60E78 /* passwordChange.swift in Sources */,
 				BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */,
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
@@ -405,6 +419,8 @@
 				4C068A07203BB87600A2E688 /* (null) in Sources */,
 				4C16F9C2203D140B00A2B4C0 /* (null) in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
+				CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */,
+				CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */,
 				CBC5F23E203D16B800A60E78 /* ShowBalance.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
 				CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */,
