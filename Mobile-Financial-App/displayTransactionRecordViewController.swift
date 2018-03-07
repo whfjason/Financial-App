@@ -12,8 +12,6 @@ import Firebase
 import FirebaseDatabase
 
 class displayTransactionRecordViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-//    let formatter = NumberFormatter()
 
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var tableViewTransaction: UITableView!
@@ -41,6 +39,9 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO: Format amount to currency datatype
+        
         refTransaction = Database.database().reference().child("transaction")
         let auth_userId = Auth.auth().currentUser!.uid
         var transaction = TransactionModel(payableTo: "", amount: "")
@@ -57,11 +58,13 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                     if (transaction_uid != auth_userId) {
                         continue
                     } else {
-                        let transactionName = transactionObject?["payableTo"]
-                        let transactionAmount = transactionObject?["amount"]
+                        let transactionName = (transactionObject?["payableTo"] as! String)
                         
-                        transaction = TransactionModel(payableTo: transactionName as! String?,
-                                                           amount: transactionAmount as! String?)
+                        // TODO: catch exception for invalid input for amount
+                        let transactionAmount = (transactionObject?["amount"] as! String)
+                        
+                        transaction = TransactionModel(payableTo: transactionName,
+                                                       amount: transactionAmount)
                     }
                     self.transactionList.append(transaction)
                 }

@@ -39,7 +39,11 @@ class ExpenseRecordViewController: UIViewController {
     
     @IBAction func addTransaction(_ sender: UIButton) {
         addTransactionToDB()
-        //
+    }
+    
+    
+    @IBAction func showFullTransactionRecord(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "transactionRecord", sender: self)
     }
     
     func addTransactionToDB() {

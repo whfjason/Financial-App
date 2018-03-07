@@ -35,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4n-a5-TUN">
-                                        <rect key="frame" x="61" y="434" width="253" height="44"/>
+                                        <rect key="frame" x="61" y="434" width="272" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.71764705880000002" green="0.1529411765" blue="0.21176470589999999" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
@@ -43,7 +43,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="addTransaction:" destination="mxV-6F-050" eventType="touchUpInside" id="pc6-Be-3vM"/>
+                                            <segue destination="elU-Pd-TIk" kind="show" id="JIh-8b-hSb"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8w-ag-Nvk">
@@ -95,6 +95,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0U-Yx-v9A">
+                                        <rect key="frame" x="60" y="506" width="273" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.71764705880000002" green="0.1529411765" blue="0.21176470589999999" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
+                                        <state key="normal" title="View transaction Record">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="NOW-c8-Iuy" kind="show" identifier="transactionRecord" id="7g5-Ul-DFg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
@@ -104,7 +116,6 @@
                         <outlet property="accountType" destination="AYY-Vl-Hzk" id="OqY-9h-kB6"/>
                         <outlet property="payableTo" destination="FIX-B9-Izz" id="npf-NN-LZI"/>
                         <outlet property="transactionAmount" destination="3f5-oT-CLm" id="MHU-Hv-Psy"/>
-                        <segue destination="elU-Pd-TIk" kind="show" identifier="addTransactionToFullRecord" id="6wc-ZT-Mtp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYC-2O-pOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,6 +129,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cS-4h-x5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-129" y="515"/>
+        </scene>
+        <!--DisplayTransactionRecord-->
+        <scene sceneID="cGV-Ig-UVk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DisplayTransactionRecord" id="NOW-c8-Iuy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aF-fe-3eQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="277"/>
         </scene>
     </scenes>
     <resources>

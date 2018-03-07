@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBAction func loginButton(_ sender: UIButton) {
         login()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if FirebaseApp.app() == nil {
