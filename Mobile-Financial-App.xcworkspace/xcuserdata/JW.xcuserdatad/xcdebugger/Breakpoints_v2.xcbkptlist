@@ -19,5 +19,83 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mobile-Financial-App/displayTransactionRecordViewController.swift"
+            timestampString = "542071814.936893"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "displayTransactionRecordViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mobile_Financial_App.displayTransactionRecordViewController.labelMessage.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "Mobile-Financial-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JW/Desktop/Financial-App/Mobile-Financial-App/displayTransactionRecordViewController.swift"
+                  timestampString = "542073771.724103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mobile_Financial_App.displayTransactionRecordViewController.labelMessage.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "Mobile-Financial-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JW/Desktop/Financial-App/Mobile-Financial-App/displayTransactionRecordViewController.swift"
+                  timestampString = "542073771.726877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mobile_Financial_App.displayTransactionRecordViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Mobile_Financial_App.displayTransactionRecordViewController"
+                  moduleName = "Mobile-Financial-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JW/Desktop/Financial-App/Mobile-Financial-App/displayTransactionRecordViewController.swift"
+                  timestampString = "542073771.730371"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mobile_Financial_App.displayTransactionRecordViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Mobile_Financial_App.displayTransactionRecordViewController&gt;"
+                  moduleName = "Mobile-Financial-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JW/Desktop/Financial-App/Mobile-Financial-App/displayTransactionRecordViewController.swift"
+                  timestampString = "542073771.732638"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
