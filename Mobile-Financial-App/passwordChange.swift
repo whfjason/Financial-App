@@ -64,10 +64,7 @@ class passwordChange: UIViewController {
             self.present(notSigninAlert, animated: true, completion: nil)
             return
         }
-        
-        
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -77,15 +74,4 @@ class passwordChange: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.title = "updatedPW"
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
