@@ -12,11 +12,11 @@ import Firebase
 import FirebaseDatabase
 
 class displayTransactionRecordViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+//    let formatter = NumberFormatter()
 
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var tableViewTransaction: UITableView!
-    
     
     var transactionList = [TransactionModel]()
     
