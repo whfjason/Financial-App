@@ -7,34 +7,21 @@
 //
 
 import UIKit
-
-class fViewController: UIViewController{
+import Firebase
+import FirebaseDatabase
+class ShowBalanceViewController: UIViewController, UITableViewDelegate,UITableViewDataSource{
    
-    @IBOutlet var firstButton: UIButton!
-   
-    @IBOutlet var secondButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        firstButton.buttonDesign()
-        secondButton.buttonDesign()
-    }
+        }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
 
-extension UIButton{
-    func buttonDesign(){
-        backgroundColor = UIColor.darkGray
-        layer.cornerRadius = frame.height/2
-        setTitleColor(UIColor.white, for: .normal)
-        layer.shadowColor = UIColor.darkGray.cgColor
-        layer.shadowRadius = 4
-        layer.shadowOpacity = 0.5
-        layer.shadowOffset = CGSize(width: 0, height: 0)
         
-}
-}
+
