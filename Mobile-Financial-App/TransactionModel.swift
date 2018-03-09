@@ -1,5 +1,4 @@
 //
-//  ArtistModel.swift
 //  Mobile-Financial-App
 //
 //  Created by Jason Wong on 2018-03-06.
