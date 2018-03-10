@@ -1,3 +1,14 @@
+/***************************************************************************************
+ *Citiation:
+ *    Title: KVCipher
+ *    Author: verbeeckkristof/crypto
+ *    Date: March 9, 2018
+ *    Code version: 1.0
+ *    Availability: https://github.com/verbeeckkristof/crypto
+ *
+ ***************************************************************************************/
+
+
 /*
  This encryption is of a level that most hackers can not decrypt it a fair timespan
  it is however hackable if there is enough time
