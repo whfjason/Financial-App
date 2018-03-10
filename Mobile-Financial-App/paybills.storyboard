@@ -5,8 +5,8 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+        <development version="8000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +14,10 @@
         <scene sceneID="W8d-eN-YMq">
             <objects>
                 <viewController id="HHF-Ui-5an" customClass="paybillsViewController" customModule="Mobile_Financial_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CSp-Jl-bwf"/>
+                        <viewControllerLayoutGuide type="bottom" id="BHP-RQ-Fo4"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Wwg-5x-MkL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +144,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="fZw-Cp-yno"/>
                     </view>
                     <connections>
                         <outlet property="paymentPassword" destination="y6U-QY-8OS" id="H9T-kR-pRr"/>
