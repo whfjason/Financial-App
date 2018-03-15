@@ -1,4 +1,8 @@
 # Mobile Financial App
+A simple, modern and user-friendly iOS application that allows users to manage personal finances.
+
+## Built With
+* [Firebase](https://firebase.google.com/) - Authentication and realtime database
 
 ## User Interfaces
 ### Homepage & Login
