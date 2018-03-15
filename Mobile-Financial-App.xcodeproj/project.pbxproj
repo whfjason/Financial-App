@@ -26,13 +26,14 @@
 		BB193C6A204F560900142551 /* InteractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193C69204F560900142551 /* InteractViewController.swift */; };
 		BB193C6C204F56E800142551 /* InteractStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */; };
 		BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB687D04204E622700E440C1 /* InterestRate.storyboard */; };
-		BB687D07204E624200E440C1 /* InterestRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB687D06204E624200E440C1 /* InterestRateViewController.swift */; };
 		BBB26C2C204E135900D05A30 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB26C2B204E135900D05A30 /* Menu.storyboard */; };
 		BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB26C2D204E170200D05A30 /* MenuViewController.swift */; };
 		CB32B52A204F370C0096290D /* DisplayTransactionRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */; };
 		CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B528204F370C0096290D /* TransactionModel.swift */; };
 		CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */; };
 		CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */; };
+		CBBAEABC2059FD8E00E9F7D7 /* InterestLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAEABA2059FD8E00E9F7D7 /* InterestLineChart.swift */; };
+		CBBAEABD2059FD8E00E9F7D7 /* InterestRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAEABB2059FD8E00E9F7D7 /* InterestRateViewController.swift */; };
 		CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */; };
 		CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */; };
 		CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */; };
@@ -86,13 +87,14 @@
 		BB193C69204F560900142551 /* InteractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractViewController.swift; sourceTree = "<group>"; };
 		BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InteractStoryBoard.storyboard; sourceTree = "<group>"; };
 		BB687D04204E622700E440C1 /* InterestRate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InterestRate.storyboard; sourceTree = "<group>"; };
-		BB687D06204E624200E440C1 /* InterestRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestRateViewController.swift; sourceTree = "<group>"; };
 		BBB26C2B204E135900D05A30 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		BBB26C2D204E170200D05A30 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayTransactionRecord.storyboard; sourceTree = "<group>"; };
 		CB32B528204F370C0096290D /* TransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayTransactionRecordViewController.swift; sourceTree = "<group>"; };
+		CBBAEABA2059FD8E00E9F7D7 /* InterestLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestLineChart.swift; sourceTree = "<group>"; };
+		CBBAEABB2059FD8E00E9F7D7 /* InterestRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestRateViewController.swift; sourceTree = "<group>"; };
 		CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseRecordViewController.swift; sourceTree = "<group>"; };
 		CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpenseReportStoryBoard.storyboard; sourceTree = "<group>"; };
 		CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -173,9 +175,10 @@
 				CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */,
 				CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */,
 				BB687D04204E622700E440C1 /* InterestRate.storyboard */,
-				BB193C69204F560900142551 /* InteractViewController.swift */,
+				CBBAEABB2059FD8E00E9F7D7 /* InterestRateViewController.swift */,
+				CBBAEABA2059FD8E00E9F7D7 /* InterestLineChart.swift */,
 				BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */,
-				BB687D06204E624200E440C1 /* InterestRateViewController.swift */,
+				BB193C69204F560900142551 /* InteractViewController.swift */,
 				BBB26C2D204E170200D05A30 /* MenuViewController.swift */,
 				BBB26C2B204E135900D05A30 /* Menu.storyboard */,
 				4C07C9EF205249D900501C87 /* KVCipher.swift */,
@@ -370,6 +373,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -377,6 +381,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -427,12 +432,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBAEABD2059FD8E00E9F7D7 /* InterestRateViewController.swift in Sources */,
 				CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */,
+				CBBAEABC2059FD8E00E9F7D7 /* InterestLineChart.swift in Sources */,
 				CBC5F23D203D16B800A60E78 /* passwordChange.swift in Sources */,
 				BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */,
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */,
-				BB687D07204E624200E440C1 /* InterestRateViewController.swift in Sources */,
 				4C07C9F0205249D900501C87 /* paybillsViewController.swift in Sources */,
 				BB193C6A204F560900142551 /* InteractViewController.swift in Sources */,
 				4C07C9F2205249D900501C87 /* KVCipher.swift in Sources */,

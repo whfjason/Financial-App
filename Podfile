@@ -8,5 +8,6 @@ target 'Mobile-Financial-App' do
   pod ‘Firebase/Core’
   pod ‘Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Charts', '3.0.2'
 
 end

@@ -13,9 +13,6 @@ import QuartzCore
 
 class InteractViewController: UIViewController {
     
-   
-    
-    
     @IBAction func RBC(_ sender: UIButton) {
         if let url = NSURL(string:"https://www.rbc.com"){
             UIApplication.shared.open(url as URL)
