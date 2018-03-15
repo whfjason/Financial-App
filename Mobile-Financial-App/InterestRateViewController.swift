@@ -6,12 +6,11 @@
 //  Copyright © 2018 55487145. All rights reserved.
 //
 
+// TODO: Bug Fix Needed -- multiple plots are stacked on top of each for alpha < 1 in background color settings instead of overwrite
+
 import UIKit
 import Foundation
 import Charts
-
-// TODO: Correct x-axis to integer data
-// TODO: Add padding to plot area
 
 protocol GetChartData {
     func getChartData(with dataPoints: [Int], values: [Double])
@@ -28,11 +27,12 @@ class InterestRateViewController: UIViewController, GetChartData {
     @IBOutlet weak var Compound: UITextField!
     @IBOutlet weak var Interest: UITextField!
     @IBOutlet weak var Duration: UITextField!
-    @IBOutlet weak var Result: UILabel!
     @IBAction func Execute(_ sender: Any) {
+        checkSubViewAlreadyExist()
         compoundInterest()
         lineChart()
     }
+    @IBOutlet weak var Result: UILabel!
     
     func compoundInterest() {
         
@@ -43,6 +43,8 @@ class InterestRateViewController: UIViewController, GetChartData {
         let n = Double(Compound.text!)
         let r = Double(Double(Interest.text!)! / 100)
         let T = Double(Duration.text!)
+        
+        let initialPrincipal = String(p!)
         
         let date = Date()
         let calendar = Calendar.current
@@ -59,7 +61,12 @@ class InterestRateViewController: UIViewController, GetChartData {
             p = tmp
         }
         self.getChartData(with: compoundDuration, values: accumulatedReturn)
-        Result.text = String(p!)
+        
+        let finalInvestment = String(Double(round(100 * p!) / 100))
+        
+        let textMessage = "Invested with an initial principal of $\(initialPrincipal) with an interest rate of \(r * 100)% compounding \(String(Int(n!))) times per annum over \(String(Int(T!))) years, you will end up with $\(finalInvestment)"
+        
+        Result.text = textMessage
     }
 
     override func viewDidLoad() {
@@ -67,7 +74,10 @@ class InterestRateViewController: UIViewController, GetChartData {
     }
     
     func lineChart() {
-        let plot = CGRect(x: 0.0, y: 30.0, width: self.view.frame.width, height: (self.view.frame.height / 1.9)).insetBy(dx: 0, dy: 20)
+        let plot = CGRect(x: 23.0,
+                          y: (self.view.frame.height - (self.view.frame.height / 1.9)),
+                          width: self.view.frame.width * 0.9,
+                          height: (self.view.frame.height / 1.9)).insetBy(dx: 0, dy: 20)
         let lineChart = InterestLineChart(frame: plot)
         lineChart.delegate = self
         self.view.addSubview(lineChart)
@@ -78,6 +88,14 @@ class InterestRateViewController: UIViewController, GetChartData {
         self.accumulatedReturn = values
     }
     
+    func checkSubViewAlreadyExist() {
+        for v in self.view.subviews {
+            if v is InterestLineChart {
+                v.removeFromSuperview()
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -86,7 +104,7 @@ class InterestRateViewController: UIViewController, GetChartData {
 public class ChartFormatter: NSObject, IAxisValueFormatter {
     var compoundDuration = [String]()
     public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        return compoundDuration[Int(value)] // index out of range error
+        return compoundDuration[Int(value)]
     }
 }
 
