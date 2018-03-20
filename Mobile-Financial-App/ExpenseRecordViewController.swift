@@ -35,6 +35,7 @@ class ExpenseRecordViewController: UIViewController {
         createAccountPicker()
         createToolbar()
         dbReference = Database.database().reference()
+        self.hideKeyboard()
     }
     
     @IBAction func addTransaction(_ sender: UIButton) {

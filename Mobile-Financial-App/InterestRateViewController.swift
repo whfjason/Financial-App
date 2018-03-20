@@ -71,6 +71,7 @@ class InterestRateViewController: UIViewController, GetChartData {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboard()
     }
     
     func lineChart() {
