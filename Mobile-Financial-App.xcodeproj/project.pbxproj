@@ -294,6 +294,7 @@
 				TargetAttributes = {
 					0F30652F2034FD37007C2970 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NN3N3S3P26;
 						ProvisioningStyle = Automatic;
 					};
 					0F3065432034FD37007C2970 = {
@@ -606,6 +607,7 @@
 			baseConfigurationReference = 8BB5B68F92D4D4A9256F0952 /* Pods-Mobile-Financial-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NN3N3S3P26;
 				INFOPLIST_FILE = "Mobile-Financial-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "COSC310.Mobile-Financial-App";
@@ -620,6 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"DEBUG_INFORMATION_FORMAT[sdk=*]" = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NN3N3S3P26;
 				INFOPLIST_FILE = "Mobile-Financial-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "COSC310.Mobile-Financial-App";
