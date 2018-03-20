@@ -76,9 +76,9 @@ class InterestRateViewController: UIViewController, GetChartData {
     
     func lineChart() {
         let plot = CGRect(x: 23.0,
-                          y: (self.view.frame.height - (self.view.frame.height / 1.9)),
+                          y: (self.view.frame.height - (self.view.frame.height / 1.95)),
                           width: self.view.frame.width * 0.9,
-                          height: (self.view.frame.height / 1.9)).insetBy(dx: 0, dy: 20)
+                          height: (self.view.frame.height / 1.98)).insetBy(dx: 0, dy: 20)
         let lineChart = InterestLineChart(frame: plot)
         lineChart.delegate = self
         self.view.addSubview(lineChart)
