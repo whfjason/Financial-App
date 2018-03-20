@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         if FirebaseApp.app() == nil {
             FirebaseApp.configure()
         }
+        self.hideKeyboard()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,5 +49,17 @@ class ViewController: UIViewController {
         }
     }
     
+}
+
+extension UIViewController {
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dimissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dimissKeyboard() {
+        view.endEditing(true);
+    }
 }
 
