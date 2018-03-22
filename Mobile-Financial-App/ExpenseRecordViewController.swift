@@ -12,7 +12,6 @@ import Firebase
 import FirebaseDatabase
 
 
-
 class ExpenseRecordViewController: UIViewController {
     
     var dbReference : DatabaseReference!
@@ -35,6 +34,7 @@ class ExpenseRecordViewController: UIViewController {
         createAccountPicker()
         createToolbar()
         dbReference = Database.database().reference()
+        self.hideKeyboard()
     }
     
     @IBAction func addTransaction(_ sender: UIButton) {
@@ -43,7 +43,7 @@ class ExpenseRecordViewController: UIViewController {
     
     
     @IBAction func showFullTransactionRecord(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "transactionRecord", sender: self)
+        // self.performSegue(withIdentifier: "transactionRecord", sender: self)
     }
     
     func addTransactionToDB() {
@@ -60,7 +60,7 @@ class ExpenseRecordViewController: UIViewController {
                                   "fromAccount": accountType.text! as String,
                                   "amount": transactionAmount.text! as String] as [String : Any]
         transactionRef.updateChildValues(transactionDetails)
-        self.performSegue(withIdentifier: "addTransactionToFullRecord", sender: self)
+//        self.performSegue(withIdentifier: "addTransactionToFullRecord", sender: self)
     }
     
     func createAccountPicker() {

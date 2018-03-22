@@ -27,6 +27,7 @@ class RegistrationViewController: UIViewController {
             FirebaseApp.configure()
         }
         dbReference = Database.database().reference()
+        self.hideKeyboard()
     }
     
     @IBAction func submitButton(sender: UIButton) {
@@ -51,6 +52,7 @@ class RegistrationViewController: UIViewController {
                 self.dbReference.child("user").child(userId).setValue(["userId": userId,
                                                                               "email": userEmail,
                                                                               "name": userName])
+                self.performSegue(withIdentifier: "mainMenuSegue", sender: self)
                 return
             } else {
                 let signupErrorAlert = UIAlertController(title: "Error", message: "\(error!.localizedDescription) Please try again.", preferredStyle: .alert)

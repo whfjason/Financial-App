@@ -43,6 +43,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="addTransaction:" destination="mxV-6F-050" eventType="touchUpInside" id="3Yg-dM-aem"/>
                                             <segue destination="elU-Pd-TIk" kind="show" id="JIh-8b-hSb"/>
                                         </connections>
                                     </button>
@@ -104,6 +105,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="showFullTransactionRecord:" destination="mxV-6F-050" eventType="touchUpInside" id="JRd-77-EQT"/>
                                             <segue destination="NOW-c8-Iuy" kind="show" identifier="transactionRecord" id="7g5-Ul-DFg"/>
                                         </connections>
                                     </button>

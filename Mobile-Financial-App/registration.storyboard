@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ARt-ti-Y6B">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ARt-ti-Y6B">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -51,8 +51,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="submitButtonWithSender:" destination="ARt-ti-Y6B" eventType="touchUpInside" id="SDK-gT-D5N"/>
-                                            <segue destination="h6V-W7-SCo" kind="show" id="M4T-Km-bIg"/>
+                                            <action selector="submitButtonWithSender:" destination="ARt-ti-Y6B" eventType="touchUpInside" id="qMN-XO-KTt"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7z-fb-Nru">
@@ -115,6 +114,7 @@
                         <outlet property="emailField" destination="dJS-Be-cEr" id="2gJ-nD-53e"/>
                         <outlet property="nameField" destination="ogK-o1-sMm" id="hdE-7n-FHI"/>
                         <outlet property="passwordField" destination="Q4d-Dq-Mol" id="3cT-2X-FjP"/>
+                        <segue destination="h6V-W7-SCo" kind="show" identifier="mainMenuSegue" id="JBb-Au-AqE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPv-B3-sqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,10 +124,12 @@
         <!--Menu-->
         <scene sceneID="OF4-dN-n0f">
             <objects>
-                <viewControllerPlaceholder storyboardName="Menu" id="h6V-W7-SCo" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Menu" id="h6V-W7-SCo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ShF-cz-Jav"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGv-AA-qD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="236"/>
+            <point key="canvasLocation" x="709" y="116"/>
         </scene>
     </scenes>
     <resources>
