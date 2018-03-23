@@ -162,13 +162,6 @@
             </objects>
             <point key="canvasLocation" x="331" y="418"/>
         </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="lBn-HR-6gM">
-            <objects>
-                <viewControllerPlaceholder id="beC-8T-Hym" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qqp-ym-xAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="coins" width="1500" height="1000"/>
