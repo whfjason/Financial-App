@@ -18,27 +18,29 @@ class ViewController: UIViewController {
     @IBAction func loginButton(_ sender: UIButton) {
         login()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if FirebaseApp.app() == nil {
             FirebaseApp.configure()
         }
+        self.hideKeyboard()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    @objc func login() {
+    func login() {
         guard let email = emailField.text else { return }
         guard let pwd = passwordField.text else { return }
         
         Auth.auth().signIn(withEmail: email, password: pwd) { user, error in
             if error == nil {
-                self.performSegue(withIdentifier: "loginToExpenseSegue", sender: self)
+                self.performSegue(withIdentifier: "loginToMenuSegue", sender: self)
                 print("login was successful")
             } else {
+                print("login failed")
                 let loginErrorAlert = UIAlertController(title: "Login Error", message: "\(error!.localizedDescription) Please try again.", preferredStyle: .alert)
                 loginErrorAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(loginErrorAlert, animated: true, completion: nil)
@@ -47,5 +49,17 @@ class ViewController: UIViewController {
         }
     }
     
+}
+
+extension UIViewController {
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dimissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dimissKeyboard() {
+        view.endEditing(true);
+    }
 }
 

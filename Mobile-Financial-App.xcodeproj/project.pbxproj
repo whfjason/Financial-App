@@ -19,11 +19,23 @@
 		0F46AF142036E07100844033 /* eric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF132036E07100844033 /* eric.storyboard */; };
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
 		4C068A07203BB87600A2E688 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		4C07C9F0205249D900501C87 /* paybillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07C9ED205249D900501C87 /* paybillsViewController.swift */; };
+		4C07C9F1205249D900501C87 /* paybills.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C07C9EE205249D900501C87 /* paybills.storyboard */; };
+		4C07C9F2205249D900501C87 /* KVCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07C9EF205249D900501C87 /* KVCipher.swift */; };
 		4C16F9C2203D140B00A2B4C0 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		4CE1EDC82064947F00A63186 /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1EDC72064947F00A63186 /* cameraViewController.swift */; };
+		4CE1EDCA2064A3CD00A63186 /* camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1EDC92064A3CD00A63186 /* camera.storyboard */; };
+		BB193C6A204F560900142551 /* InteractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193C69204F560900142551 /* InteractViewController.swift */; };
+		BB193C6C204F56E800142551 /* InteractStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */; };
 		BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB687D04204E622700E440C1 /* InterestRate.storyboard */; };
-		BB687D07204E624200E440C1 /* InterestRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB687D06204E624200E440C1 /* InterestRateViewController.swift */; };
 		BBB26C2C204E135900D05A30 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB26C2B204E135900D05A30 /* Menu.storyboard */; };
 		BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB26C2D204E170200D05A30 /* MenuViewController.swift */; };
+		CB32B52A204F370C0096290D /* DisplayTransactionRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */; };
+		CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B528204F370C0096290D /* TransactionModel.swift */; };
+		CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */; };
+		CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */; };
+		CBBAEABC2059FD8E00E9F7D7 /* InterestLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAEABA2059FD8E00E9F7D7 /* InterestLineChart.swift */; };
+		CBBAEABD2059FD8E00E9F7D7 /* InterestRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAEABB2059FD8E00E9F7D7 /* InterestRateViewController.swift */; };
 		CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */; };
 		CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */; };
 		CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */; };
@@ -69,12 +81,24 @@
 		0F46AF132036E07100844033 /* eric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = eric.storyboard; sourceTree = "<group>"; };
 		0FBFE21420350DB900C26081 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		2B3843273F9500D55C79A07E /* Pods_Mobile_Financial_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Financial_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C07C9ED205249D900501C87 /* paybillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paybillsViewController.swift; sourceTree = "<group>"; };
+		4C07C9EE205249D900501C87 /* paybills.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = paybills.storyboard; sourceTree = "<group>"; };
+		4C07C9EF205249D900501C87 /* KVCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVCipher.swift; sourceTree = "<group>"; };
+		4CE1EDC72064947F00A63186 /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
+		4CE1EDC92064A3CD00A63186 /* camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = camera.storyboard; sourceTree = "<group>"; };
 		5BC5768264E9DDDE640B96F5 /* Pods-Mobile-Financial-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.release.xcconfig"; sourceTree = "<group>"; };
 		8BB5B68F92D4D4A9256F0952 /* Pods-Mobile-Financial-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.debug.xcconfig"; sourceTree = "<group>"; };
+		BB193C69204F560900142551 /* InteractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractViewController.swift; sourceTree = "<group>"; };
+		BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InteractStoryBoard.storyboard; sourceTree = "<group>"; };
 		BB687D04204E622700E440C1 /* InterestRate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InterestRate.storyboard; sourceTree = "<group>"; };
-		BB687D06204E624200E440C1 /* InterestRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestRateViewController.swift; sourceTree = "<group>"; };
 		BBB26C2B204E135900D05A30 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		BBB26C2D204E170200D05A30 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayTransactionRecord.storyboard; sourceTree = "<group>"; };
+		CB32B528204F370C0096290D /* TransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayTransactionRecordViewController.swift; sourceTree = "<group>"; };
+		CBBAEABA2059FD8E00E9F7D7 /* InterestLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestLineChart.swift; sourceTree = "<group>"; };
+		CBBAEABB2059FD8E00E9F7D7 /* InterestRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestRateViewController.swift; sourceTree = "<group>"; };
 		CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseRecordViewController.swift; sourceTree = "<group>"; };
 		CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpenseReportStoryBoard.storyboard; sourceTree = "<group>"; };
 		CBC54CE920370BEE00C00CE0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -137,9 +161,13 @@
 				CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */,
 				0F3065332034FD37007C2970 /* AppDelegate.swift */,
 				0FBFE21420350DB900C26081 /* LoginTextField.swift */,
-				0F3065352034FD37007C2970 /* ViewController.swift */,
+				CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */,
+				CB32B528204F370C0096290D /* TransactionModel.swift */,
+				CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */,
+				CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */,
 				0F3065372034FD37007C2970 /* Main.storyboard */,
 				0F30653A2034FD37007C2970 /* Assets.xcassets */,
+				0F3065352034FD37007C2970 /* ViewController.swift */,
 				0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */,
 				0F30653F2034FD37007C2970 /* Info.plist */,
 				0F46AF0F2036B2C200844033 /* registration.storyboard */,
@@ -151,9 +179,17 @@
 				CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */,
 				CBC54CE72037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard */,
 				BB687D04204E622700E440C1 /* InterestRate.storyboard */,
-				BB687D06204E624200E440C1 /* InterestRateViewController.swift */,
+				CBBAEABB2059FD8E00E9F7D7 /* InterestRateViewController.swift */,
+				CBBAEABA2059FD8E00E9F7D7 /* InterestLineChart.swift */,
+				BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */,
+				BB193C69204F560900142551 /* InteractViewController.swift */,
 				BBB26C2D204E170200D05A30 /* MenuViewController.swift */,
 				BBB26C2B204E135900D05A30 /* Menu.storyboard */,
+				4C07C9EF205249D900501C87 /* KVCipher.swift */,
+				4C07C9EE205249D900501C87 /* paybills.storyboard */,
+				4C07C9ED205249D900501C87 /* paybillsViewController.swift */,
+				4CE1EDC92064A3CD00A63186 /* camera.storyboard */,
+				4CE1EDC72064947F00A63186 /* cameraViewController.swift */,
 			);
 			path = "Mobile-Financial-App";
 			sourceTree = "<group>";
@@ -306,12 +342,16 @@
 				0F46AF122036E02B00844033 /* passwordChange.storyboard in Resources */,
 				CBC54CEE20370E3E00C00CE0 /* GoogleService-Info.plist in Resources */,
 				0F46AF102036B2C200844033 /* registration.storyboard in Resources */,
+				4CE1EDCA2064A3CD00A63186 /* camera.storyboard in Resources */,
+				BB193C6C204F56E800142551 /* InteractStoryBoard.storyboard in Resources */,
 				BBB26C2C204E135900D05A30 /* Menu.storyboard in Resources */,
 				0F46AF142036E07100844033 /* eric.storyboard in Resources */,
 				0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */,
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
+				CB32B52A204F370C0096290D /* DisplayTransactionRecord.storyboard in Resources */,
 				CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */,
 				BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */,
+				4C07C9F1205249D900501C87 /* paybills.storyboard in Resources */,
 				0F3065392034FD37007C2970 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,14 +380,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,14 +439,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBAEABD2059FD8E00E9F7D7 /* InterestRateViewController.swift in Sources */,
+				CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */,
+				CBBAEABC2059FD8E00E9F7D7 /* InterestLineChart.swift in Sources */,
 				CBC5F23D203D16B800A60E78 /* passwordChange.swift in Sources */,
 				BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */,
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */,
-				BB687D07204E624200E440C1 /* InterestRateViewController.swift in Sources */,
+				4CE1EDC82064947F00A63186 /* cameraViewController.swift in Sources */,
+				4C07C9F0205249D900501C87 /* paybillsViewController.swift in Sources */,
+				BB193C6A204F560900142551 /* InteractViewController.swift in Sources */,
+				4C07C9F2205249D900501C87 /* KVCipher.swift in Sources */,
 				4C068A07203BB87600A2E688 /* (null) in Sources */,
 				4C16F9C2203D140B00A2B4C0 /* (null) in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
+				CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */,
+				CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */,
 				CBC5F23E203D16B800A60E78 /* ShowBalance.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
 				CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */,
@@ -562,10 +614,14 @@
 			baseConfigurationReference = 8BB5B68F92D4D4A9256F0952 /* Pods-Mobile-Financial-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Mobile-Financial-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "COSC310.Mobile-Financial-App";
+				PRODUCT_BUNDLE_IDENTIFIER = mcy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -575,10 +631,15 @@
 			baseConfigurationReference = 5BC5768264E9DDDE640B96F5 /* Pods-Mobile-Financial-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				"DEBUG_INFORMATION_FORMAT[sdk=*]" = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Mobile-Financial-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "COSC310.Mobile-Financial-App";
+				PRODUCT_BUNDLE_IDENTIFIER = mcy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

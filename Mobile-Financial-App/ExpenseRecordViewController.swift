@@ -3,19 +3,28 @@
 //  Mobile-Financial-App
 //
 //  Created by Jason  Wong on 2018-02-16.
-//  Copyright © 2018 55487145. All rights reserved.
+//  Copyright © 2018 Jason Wong. All rights reserved.
 //
 
 import UIKit
+import Foundation
+import Firebase
+import FirebaseDatabase
+
 
 class ExpenseRecordViewController: UIViewController {
     
-    @IBOutlet weak var expenseReportType: UITextField!
-
-    let account = ["Checking CIBC",
-                   "Credit CIBC",
-                   "Credit RBC",
-                   "Credit TD"
+    var dbReference : DatabaseReference!
+    var dbHandle : DatabaseHandle!
+    
+    @IBOutlet weak var accountType: UITextField!
+    @IBOutlet weak var transactionAmount: UITextField!
+    @IBOutlet weak var payableTo: UITextField!
+    
+    // Retrieve all available client expense accounts from database dynamically
+    let account = ["Checking",
+                   "Saving",
+                   "Cash"
                    ]
     
     var selectedAccount: String?
@@ -24,14 +33,41 @@ class ExpenseRecordViewController: UIViewController {
         super.viewDidLoad()
         createAccountPicker()
         createToolbar()
-
+        dbReference = Database.database().reference()
+        self.hideKeyboard()
+    }
+    
+    @IBAction func addTransaction(_ sender: UIButton) {
+        addTransactionToDB()
+    }
+    
+    
+    @IBAction func showFullTransactionRecord(_ sender: UIButton) {
+        // self.performSegue(withIdentifier: "transactionRecord", sender: self)
+    }
+    
+    func addTransactionToDB() {
+        let uid = Auth.auth().currentUser!.uid;
+        let ref = dbReference.child("transaction")
+        let tid = ref.childByAutoId().key
+        let transactionRef = ref.child(tid)
+        let timestamp = NSDate().timeIntervalSince1970  // defaulted UTC time
+        
+        let transactionDetails = ["transactionId": tid,
+                                  "userId": uid as String,
+                                  "timestamp": timestamp,
+                                  "payableTo": payableTo.text! as String,
+                                  "fromAccount": accountType.text! as String,
+                                  "amount": transactionAmount.text! as String] as [String : Any]
+        transactionRef.updateChildValues(transactionDetails)
+//        self.performSegue(withIdentifier: "addTransactionToFullRecord", sender: self)
     }
     
     func createAccountPicker() {
         
         let accountPicker = UIPickerView()
         accountPicker.delegate = self
-        expenseReportType.inputView = accountPicker
+        accountType.inputView = accountPicker
     }
     
     func createToolbar() {
@@ -43,7 +79,7 @@ class ExpenseRecordViewController: UIViewController {
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         
-        expenseReportType.inputAccessoryView = toolBar
+        accountType.inputAccessoryView = toolBar
     }
     
     func dismissKeyboard() {
@@ -55,9 +91,8 @@ class ExpenseRecordViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = "Expense Report"
+        navigationItem.title = "Transaction Records"
     }
-
 }
 
 extension ExpenseRecordViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -76,6 +111,6 @@ extension ExpenseRecordViewController: UIPickerViewDelegate, UIPickerViewDataSou
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedAccount = account[row]
-        expenseReportType.text = selectedAccount
+        accountType.text = selectedAccount
     }
 }

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ckA-IJ-7sE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ckA-IJ-7sE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
             <string>Avenir-Light</string>
-            <string>Avenir-LightOblique</string>
         </array>
         <array key="HiraginoKakuGothic.ttc">
             <string>HiraginoSans-W3</string>
@@ -38,8 +37,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign-up" translatesAutoresizingMaskIntoConstraints="NO" id="Wkz-qe-wL3">
+                                        <rect key="frame" x="135" y="128" width="105" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                    </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIY-Xi-6Qv" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
-                                        <rect key="frame" x="43" y="329" width="289" height="48"/>
+                                        <rect key="frame" x="43" y="350" width="289" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
@@ -52,7 +58,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvT-K9-MkD">
-                                        <rect key="frame" x="61" y="466" width="253" height="44"/>
+                                        <rect key="frame" x="60" y="487" width="253" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.69803921570000005" green="0.72156862749999995" blue="0.86666666670000003" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
@@ -63,15 +69,8 @@
                                             <segue destination="gC9-JN-pjf" kind="show" id="GsC-Zm-8s7"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign-up" translatesAutoresizingMaskIntoConstraints="NO" id="Wkz-qe-wL3">
-                                        <rect key="frame" x="135" y="136" width="105" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                                        </accessibility>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-s6-PiB">
-                                        <rect key="frame" x="61" y="400" width="253" height="44"/>
+                                        <rect key="frame" x="60" y="426" width="253" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.71764705880000002" green="0.1529411765" blue="0.21176470589999999" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
@@ -79,11 +78,11 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHD-gs-MWN"/>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wF-hw-ynY"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnY-zE-PsA" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
-                                        <rect key="frame" x="43" y="260" width="289" height="48"/>
+                                        <rect key="frame" x="43" y="281" width="289" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
@@ -95,69 +94,30 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YC-C9-0Mf">
-                                        <rect key="frame" x="216" y="518" width="76" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="Reset here.">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Gau-8j-OIV" kind="show" id="lCc-02-SfI"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forget your password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xV-NW-4On">
-                                        <rect key="frame" x="61" y="518" width="156" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRL-0O-nS4">
-                                        <rect key="frame" x="53" y="76" width="253" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.71764705880000002" green="0.1529411765" blue="0.21176470589999999" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
-                                        <state key="normal" title="TRIAL">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uj0-Fg-UKF"/>
-                                            <segue destination="Oja-Z3-MZh" kind="show" id="IHd-Io-cSA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mur-EO-BTt">
-                                        <rect key="frame" x="53" y="581" width="48" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="HELLO"/>
-                                        <connections>
-                                            <segue destination="SMK-4X-rTA" kind="show" id="M5Q-Cs-fKa"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="0dJ-ig-gXD"/>
                     <connections>
                         <outlet property="emailField" destination="jnY-zE-PsA" id="Clz-bi-UwC"/>
                         <outlet property="passwordField" destination="eIY-Xi-6Qv" id="RaN-gC-A4V"/>
-                        <segue destination="c36-WM-Iub" kind="showDetail" identifier="loginToExpenseSegue" action="showViewController:sender:" id="fgH-CI-rD8"/>
+                        <segue destination="cjA-dn-HCR" kind="show" identifier="loginToMenuSegue" id="fi3-pT-AjJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="319.19999999999999" y="-224.4377811094453"/>
         </scene>
-        <!--ExpenseReportStoryBoard-->
-        <scene sceneID="Iog-o9-jsR">
+        <!--Menu-->
+        <scene sceneID="tey-U8-OOM">
             <objects>
-                <viewControllerPlaceholder storyboardName="ExpenseReportStoryBoard" id="c36-WM-Iub" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="20e-Le-Y8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Menu" id="cjA-dn-HCR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sy9-q9-Q3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834" y="171"/>
+            <point key="canvasLocation" x="999" y="-235"/>
         </scene>
         <!--registration-->
         <scene sceneID="NZe-lp-hEL">
@@ -166,30 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWZ-BZ-SEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="-94"/>
-        </scene>
-        <!--InterestRate-->
-        <scene sceneID="D8D-XM-K3p">
-            <objects>
-                <viewControllerPlaceholder storyboardName="InterestRate" id="SMK-4X-rTA" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pTC-OU-pLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="894" y="22"/>
-        </scene>
-        <!--passwordChange-->
-        <scene sceneID="VF2-tV-xSs">
-            <objects>
-                <viewControllerPlaceholder storyboardName="passwordChange" id="Gau-8j-OIV" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="chd-MD-5ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1086" y="-295"/>
-        </scene>
-        <!--Menu-->
-        <scene sceneID="6Zw-be-Cqj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Menu" id="Oja-Z3-MZh" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydr-fD-zht" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1086" y="-449"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fBa-ae-zqt">
@@ -202,7 +138,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aje-Gl-Akw"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vtM-Nu-JZ1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQN-xN-jcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
