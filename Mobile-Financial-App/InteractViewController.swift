@@ -19,6 +19,19 @@ class InteractViewController: UIViewController {
         }
     }
 
+    @IBAction func CIBC(_ sender: UIButton) {
+        if let url = NSURL(string:"https://www.cibc.com"){
+            UIApplication.shared.open(url as URL)
+        }
+    }
+    
+    @IBAction func HSBC(_ sender: UIButton) {
+        if let url = NSURL(string:"https://www.hsbc.com"){
+            UIApplication.shared.open(url as URL)
+        }
+    
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
