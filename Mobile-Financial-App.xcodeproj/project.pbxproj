@@ -23,6 +23,8 @@
 		A201C217205248660085E566 /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A201C216205248660085E566 /* BalanceModel.swift */; };
 		A2595F8E205208C300F98DA4 /* ShowBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2595F8D205208C300F98DA4 /* ShowBalanceViewController.swift */; };
 		A2595F902052184400F98DA4 /* ShowBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2595F8F2052184400F98DA4 /* ShowBalanceTableViewCell.swift */; };
+		A2AF05C12065CEF300F068A5 /* email.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AF05C02065CEF300F068A5 /* email.storyboard */; };
+		A2AF05C32065D10100F068A5 /* emailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF05C22065D10100F068A5 /* emailViewController.swift */; };
 		BB193C6A204F560900142551 /* InteractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193C69204F560900142551 /* InteractViewController.swift */; };
 		BB193C6C204F56E800142551 /* InteractStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */; };
 		BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB687D04204E622700E440C1 /* InterestRate.storyboard */; };
@@ -82,6 +84,8 @@
 		A201C216205248660085E566 /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
 		A2595F8D205208C300F98DA4 /* ShowBalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBalanceViewController.swift; sourceTree = "<group>"; };
 		A2595F8F2052184400F98DA4 /* ShowBalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBalanceTableViewCell.swift; sourceTree = "<group>"; };
+		A2AF05C02065CEF300F068A5 /* email.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = email.storyboard; sourceTree = "<group>"; };
+		A2AF05C22065D10100F068A5 /* emailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailViewController.swift; sourceTree = "<group>"; };
 		BB193C69204F560900142551 /* InteractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractViewController.swift; sourceTree = "<group>"; };
 		BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InteractStoryBoard.storyboard; sourceTree = "<group>"; };
 		BB687D04204E622700E440C1 /* InterestRate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InterestRate.storyboard; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 				BB687D06204E624200E440C1 /* InterestRateViewController.swift */,
 				BBB26C2D204E170200D05A30 /* MenuViewController.swift */,
 				BBB26C2B204E135900D05A30 /* Menu.storyboard */,
+				A2AF05C02065CEF300F068A5 /* email.storyboard */,
+				A2AF05C22065D10100F068A5 /* emailViewController.swift */,
 			);
 			path = "Mobile-Financial-App";
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 				BBB26C2C204E135900D05A30 /* Menu.storyboard in Resources */,
 				0F46AF142036E07100844033 /* ShowBalance.storyboard in Resources */,
 				0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */,
+				A2AF05C12065CEF300F068A5 /* email.storyboard in Resources */,
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
 				CB32B52A204F370C0096290D /* DisplayTransactionRecord.storyboard in Resources */,
 				CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */,
@@ -432,6 +439,7 @@
 				BB687D07204E624200E440C1 /* InterestRateViewController.swift in Sources */,
 				BB193C6A204F560900142551 /* InteractViewController.swift in Sources */,
 				A201C217205248660085E566 /* BalanceModel.swift in Sources */,
+				A2AF05C32065D10100F068A5 /* emailViewController.swift in Sources */,
 				4C068A07203BB87600A2E688 /* (null) in Sources */,
 				4C16F9C2203D140B00A2B4C0 /* (null) in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
