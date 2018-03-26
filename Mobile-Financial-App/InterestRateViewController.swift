@@ -6,7 +6,7 @@
 //  Copyright © 2018 55487145. All rights reserved.
 //
 
-// TODO: Bug Fix Needed -- multiple plots are stacked on top of each for alpha < 1 in background color settings instead of overwrite
+// TODO:bugs fixed
 
 import UIKit
 import Foundation
@@ -38,37 +38,93 @@ class InterestRateViewController: UIViewController, GetChartData {
         
         compoundDuration = []
         accumulatedReturn = []
-        
-        var p = Double(Principal.text!)
-        let n = Double(Compound.text!)
-        let r = Double(Double(Interest.text!)! / 100)
-        let T = Double(Duration.text!)
-        
-        let initialPrincipal = String(p!)
-        
-        let date = Date()
-        let calendar = Calendar.current
-        let year = calendar.component(.year, from: date)
-        let numberOfYears = Int(T!)
-        
-        compoundDuration.append(1)
-        accumulatedReturn.append(p!)
-        
-        for i in year ... (year + numberOfYears - 1) {
-            compoundDuration.append(i + 1)
-            let tmp = Double(p! * (pow((r/n!) + 1, n!)))
-            accumulatedReturn.append(tmp)
-            p = tmp
+        if(Principal==nil||Compound==nil||Interest==nil||Duration==nil){
+            Result.text = "must have variables!"
+            
+        }else{
+            
+            
+            
+            Principal.text! = (Principal.text?.replacingOccurrences(of: " ", with: ""))!
+            Compound.text! = (Compound.text?.replacingOccurrences(of: " ", with: ""))!
+            Interest.text! = (Interest.text?.replacingOccurrences(of: " ", with: ""))!
+            Duration.text! = (Duration.text?.replacingOccurrences(of: " ", with: ""))!
+            
+            
+            
+            
+            
+            let countdots = Principal.text!
+            let cont = countdots.components(separatedBy:".")
+            let x = cont.count-1
+            
+            if x > 1 || Principal.text! == "."
+            {
+                Result.text = "dots!"
+            }else{
+                
+                Principal.text! = remove(text: (Principal.text)!)
+                Compound.text! = remove(text: (Compound.text)!)
+                Interest.text! = remove(text: (Interest.text)!)
+                Duration.text! = remove(text: (Duration.text)!)
+                
+                if((Principal.text)==""||(Compound.text)==""||(Interest.text)==""||(Duration.text)==""){
+                    Result.text = "check your variables!"
+                    
+                }else{
+                    var p = Double(Principal.text!)
+                    let n = Double(Compound.text!)
+                    let r = Double(Double(Interest.text!)! / 100)
+                    let T = Double(Duration.text!)
+                    let test = 0.0;
+                    
+                    if(p!>=test||n!>=test||r>=test||T!>=test){
+                        let initialPrincipal = String(p!)
+                        
+                        let date = Date()
+                        let calendar = Calendar.current
+                        let year = calendar.component(.year, from: date)
+                        let numberOfYears = Int(T!)
+                        
+                        compoundDuration.append(1)
+                        accumulatedReturn.append(p!)
+                        
+                        for i in year ... (year + numberOfYears - 1) {
+                            compoundDuration.append(i + 1)
+                            let tmp = Double(p! * (pow((r/n!) + 1, n!)))
+                            accumulatedReturn.append(tmp)
+                            p = tmp
+                        }
+                        self.getChartData(with: compoundDuration, values: accumulatedReturn)
+                        
+                        let finalInvestment = String(Double(round(100 * p!) / 100))
+                        
+                        let textMessage = "Invested with an initial principal of $\(initialPrincipal) with an interest rate of \(r * 100)% compounding \(String(Int(n!))) times per annum over \(String(Int(T!))) years, you will end up with $\(finalInvestment)"
+                        
+                        Result.text = textMessage
+                    }else{
+                        Result.text = "Wrong input in the variables, no negative!"
+                    }
+                }
+                
+                
+                
+            }
+            
         }
-        self.getChartData(with: compoundDuration, values: accumulatedReturn)
         
-        let finalInvestment = String(Double(round(100 * p!) / 100))
         
-        let textMessage = "Invested with an initial principal of $\(initialPrincipal) with an interest rate of \(r * 100)% compounding \(String(Int(n!))) times per annum over \(String(Int(T!))) years, you will end up with $\(finalInvestment)"
         
-        Result.text = textMessage
+        
     }
-
+    
+    func remove(text: String) -> String {
+        let okayChars : Set<Character> =
+            Set(" 1234567890.".characters)
+        return String(text.characters.filter {okayChars.contains($0) })
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboard()
