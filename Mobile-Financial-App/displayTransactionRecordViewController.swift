@@ -21,14 +21,11 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var tableViewTransaction: UITableView!
     
-    
     @IBAction func export(_ sender: Any) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
             self.present(mailComposeViewController, animated: true, completion: nil)
-        } else {
-            self.showSendMailErrorAlert()
-        }
+        } 
     }
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
@@ -38,8 +35,8 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         mailComposerVC.mailComposeDelegate = self
         mailComposerVC.setToRecipients(["\(authEmail)"])
         mailComposerVC.setSubject("Financial Record Data Export Request")
-        mailComposerVC.setMessageBody("Hello, \n\nThe financial record is attached as csv file!\n\nSent from Financial App", isHTML: false)
-        do { try mailComposerVC.addAttachmentData(NSData(contentsOf: path!) as Data, mimeType: "text/csv", fileName: "\(filename)") } catch { print("\(error)")}
+        mailComposerVC.setMessageBody("Hello, \n\nThe financial record is attached as csv file!\n", isHTML: false)
+        do { try mailComposerVC.addAttachmentData(NSData(contentsOf: path!) as Data, mimeType: "text/csv", fileName: "\(filename)") } catch { print("\(error.localizedDescription)") }
         return mailComposerVC
     }
     
@@ -47,11 +44,6 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return transactionList.count
-    }
-    
-    public func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertView(title: "Could not send email", message: "Your device must have an active mail account. To setup, Settings -> Accounts & Passwords -> Gamil", delegate: self, cancelButtonTitle: "OK")
-        sendMailErrorAlert.show()
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {

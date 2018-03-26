@@ -91,7 +91,7 @@ class ExpenseRecordViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = "Transaction Records"
+        navigationItem.title = "Transactions"
     }
 }
 
