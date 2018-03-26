@@ -18,6 +18,8 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     var csvText = "Name, Amount\n"
     var authEmail = ""
     
+    
+    
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var tableViewTransaction: UITableView!
     
@@ -66,7 +68,14 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         super.viewDidLoad()
         self.hideKeyboard()
         
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = Locale.current
+        
+        
         // TODO: Format amount to currency datatype
+        
         refTransaction = Database.database().reference().child("transaction")
         let auth_userId = Auth.auth().currentUser!.uid
         authEmail = Auth.auth().currentUser!.email!
@@ -78,19 +87,21 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                 self.transactionList.removeAll()
                 
                 for record in snapshot.children.allObjects as! [DataSnapshot] {
-                    let transactionObject = record.value as? [String: AnyObject]
-                    let transaction_uid = transactionObject?["userId"]! as! String
+                    let transactionObject = record.value as! [String: AnyObject]
+                    let transaction_uid = transactionObject["userId"]! as! String
                     
                     if (transaction_uid != auth_userId) {
                         continue
                     } else {
-                        let transactionName = (transactionObject?["payableTo"] as! String)
+                        let transactionName = (transactionObject["payableTo"] as! String)
                         
                         // TODO: catch exception for invalid input for amount
-                        let transactionAmount = (transactionObject?["amount"] as! String)
+                        let amount = Double((transactionObject["amount"] as! String))
+                        let transactionAmount = currencyFormatter.string(from: NSNumber(value: amount!))
                         
+                
                         if (transactionName != "" && transactionAmount != "") {
-                            let newLine = "\(transactionName), \(transactionAmount)\n"
+                            let newLine = "\(transactionName), \(String(describing: transactionAmount))\n"
                             self.csvText.append(newLine)
                         }
                         
