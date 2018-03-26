@@ -47,11 +47,18 @@ class ExpenseRecordViewController: UIViewController {
     }
     
     func addTransactionToDB() {
+                
         let uid = Auth.auth().currentUser!.uid;
         let ref = dbReference.child("transaction")
         let tid = ref.childByAutoId().key
         let transactionRef = ref.child(tid)
-        let timestamp = NSDate().timeIntervalSince1970  // defaulted UTC time
+        
+        
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        let timestamp = formatter.string(from: date)
+        
         
         let transactionDetails = ["transactionId": tid,
                                   "userId": uid as String,

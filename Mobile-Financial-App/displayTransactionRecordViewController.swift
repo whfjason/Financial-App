@@ -18,8 +18,6 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     var csvText = "Name, Amount\n"
     var authEmail = ""
     
-    
-    
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var tableViewTransaction: UITableView!
     
@@ -74,8 +72,6 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         currencyFormatter.locale = Locale.current
         
         
-        // TODO: Format amount to currency datatype
-        
         refTransaction = Database.database().reference().child("transaction")
         let auth_userId = Auth.auth().currentUser!.uid
         authEmail = Auth.auth().currentUser!.email!
@@ -95,7 +91,6 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                     } else {
                         let transactionName = (transactionObject["payableTo"] as! String)
                         
-                        // TODO: catch exception for invalid input for amount
                         let amount = Double((transactionObject["amount"] as! String))
                         let transactionAmount = currencyFormatter.string(from: NSNumber(value: amount!))
                         
