@@ -25,10 +25,10 @@ class ExpenseRecordViewController: UIViewController {
     let account = ["Checking",
                    "Saving",
                    "Cash"
-                   ]
+    ]
     
     var selectedAccount: String?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createAccountPicker()
@@ -37,8 +37,11 @@ class ExpenseRecordViewController: UIViewController {
         self.hideKeyboard()
     }
     
+    
     @IBAction func addTransaction(_ sender: UIButton) {
+        
         addTransactionToDB()
+        
     }
     
     
@@ -47,21 +50,63 @@ class ExpenseRecordViewController: UIViewController {
     }
     
     func addTransactionToDB() {
+        
         let uid = Auth.auth().currentUser!.uid;
         let ref = dbReference.child("transaction")
         let tid = ref.childByAutoId().key
         let transactionRef = ref.child(tid)
         let timestamp = NSDate().timeIntervalSince1970  // defaulted UTC time
+        transactionAmount.text! = (transactionAmount.text?.replacingOccurrences(of: " ", with: ""))!
+        payableTo.text! = (payableTo.text?.replacingOccurrences(of: " ", with: ""))!
         
-        let transactionDetails = ["transactionId": tid,
-                                  "userId": uid as String,
-                                  "timestamp": timestamp,
-                                  "payableTo": payableTo.text! as String,
-                                  "fromAccount": accountType.text! as String,
-                                  "amount": transactionAmount.text! as String] as [String : Any]
-        transactionRef.updateChildValues(transactionDetails)
-//        self.performSegue(withIdentifier: "addTransactionToFullRecord", sender: self)
+        
+        
+        
+        let countdots = transactionAmount.text!
+        let cont = countdots.components(separatedBy:".")
+        let x = cont.count-1
+        
+        if x > 1 || transactionAmount.text! == "."
+        {
+            let alert = UIAlertController(title: "Alert", message: "check dots", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            transactionAmount.text! = remove(text: (transactionAmount.text)!)
+            payableTo.text! = remove(text: (payableTo.text)!)
+            
+            
+            if((accountType.text)==""||(transactionAmount.text)==""||(payableTo.text)==""){
+                let alert = UIAlertController(title: "Alert", message: "no null value", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+            }else{
+                transactionAmount.text! = remove(text: (transactionAmount.text)!)
+                payableTo.text! = remove(text: (payableTo.text)!)
+                let transactionDetails = ["transactionId": tid,
+                                          "userId": uid as String,
+                                          "timestamp": timestamp,
+                                          "payableTo": payableTo.text! as String,
+                                          "fromAccount": accountType.text! as String,
+                                          "amount": transactionAmount.text! as String] as [String : Any]
+                transactionRef.updateChildValues(transactionDetails)
+                
+            }
+            
+            
+            
+        }
+        
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     func createAccountPicker() {
         
@@ -82,6 +127,12 @@ class ExpenseRecordViewController: UIViewController {
         accountType.inputAccessoryView = toolBar
     }
     
+    func remove(text: String) -> String {
+        let okayChars : Set<Character> =
+            Set(" 1234567890.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".characters)
+        return String(text.characters.filter {okayChars.contains($0) })
+    }
+    
     func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -94,6 +145,8 @@ class ExpenseRecordViewController: UIViewController {
         navigationItem.title = "Transaction Records"
     }
 }
+
+
 
 extension ExpenseRecordViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
