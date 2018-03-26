@@ -51,12 +51,18 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         
         let transaction: TransactionModel
         transaction = transactionList[indexPath.row]
         cell.labelTransactionName.text = transaction.payableTo
         cell.labelTransactionAmount.text = transaction.amount
+        
+        // TODO: Using timestamp as temporary placeholder for now, it should display account running balance later on
+        cell.labelTransactionBalance.text = transaction.timestamp
+        
         return cell
     }
     
@@ -75,7 +81,7 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         refTransaction = Database.database().reference().child("transaction")
         let auth_userId = Auth.auth().currentUser!.uid
         authEmail = Auth.auth().currentUser!.email!
-        var transaction = TransactionModel(payableTo: "", amount: "")
+        var transaction = TransactionModel(payableTo: "", amount: "", timestamp: "")
         
         refTransaction.observe(DataEventType.value, with: { (snapshot) in
             if snapshot.childrenCount > 0 {
@@ -90,10 +96,10 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                         continue
                     } else {
                         let transactionName = (transactionObject["payableTo"] as! String)
-                        
                         let amount = Double((transactionObject["amount"] as! String))
                         let transactionAmount = currencyFormatter.string(from: NSNumber(value: amount!))
-                        
+                        // TODO: replace timestamp with running balance
+                        let transactionTimestamp = (transactionObject["timestamp"] as! String)
                 
                         if (transactionName != "" && transactionAmount != "") {
                             let newLine = "\(transactionName), \(String(describing: transactionAmount))\n"
@@ -101,7 +107,8 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                         }
                         
                         transaction = TransactionModel(payableTo: transactionName,
-                                                       amount: transactionAmount)
+                                                       amount: transactionAmount,
+                                                       timestamp: transactionTimestamp)
                     }
                     self.transactionList.append(transaction)
                 }

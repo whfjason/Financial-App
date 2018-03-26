@@ -12,6 +12,7 @@ class ViewControllerTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelTransactionName: UILabel!
     @IBOutlet weak var labelTransactionAmount: UILabel!
+    @IBOutlet weak var labelTransactionBalance: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
