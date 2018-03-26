@@ -21,14 +21,11 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var tableViewTransaction: UITableView!
     
-    
     @IBAction func export(_ sender: Any) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
             self.present(mailComposeViewController, animated: true, completion: nil)
-        } else {
-            self.showSendMailErrorAlert()
-        }
+        } 
     }
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
@@ -38,8 +35,8 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         mailComposerVC.mailComposeDelegate = self
         mailComposerVC.setToRecipients(["\(authEmail)"])
         mailComposerVC.setSubject("Financial Record Data Export Request")
-        mailComposerVC.setMessageBody("Hello, \n\nThe financial record is attached as csv file!\n\nSent from Financial App", isHTML: false)
-        do { try mailComposerVC.addAttachmentData(NSData(contentsOf: path!) as Data, mimeType: "text/csv", fileName: "\(filename)") } catch { print("\(error)")}
+        mailComposerVC.setMessageBody("Hello, \n\nThe financial record is attached as csv file!\n", isHTML: false)
+        do { try mailComposerVC.addAttachmentData(NSData(contentsOf: path!) as Data, mimeType: "text/csv", fileName: "\(filename)") } catch { print("\(error.localizedDescription)") }
         return mailComposerVC
     }
     
@@ -49,22 +46,23 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         return transactionList.count
     }
     
-    public func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertView(title: "Could not send email", message: "Your device must have an active mail account. To setup, Settings -> Accounts & Passwords -> Gamil", delegate: self, cancelButtonTitle: "OK")
-        sendMailErrorAlert.show()
-    }
-    
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         
         let transaction: TransactionModel
         transaction = transactionList[indexPath.row]
         cell.labelTransactionName.text = transaction.payableTo
         cell.labelTransactionAmount.text = transaction.amount
+        
+        // TODO: Using timestamp as temporary placeholder for now, it should display account running balance later on
+        cell.labelTransactionBalance.text = transaction.timestamp
+        
         return cell
     }
     
@@ -74,11 +72,16 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         super.viewDidLoad()
         self.hideKeyboard()
         
-        // TODO: Format amount to currency datatype
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = Locale.current
+        
+        
         refTransaction = Database.database().reference().child("transaction")
         let auth_userId = Auth.auth().currentUser!.uid
         authEmail = Auth.auth().currentUser!.email!
-        var transaction = TransactionModel(payableTo: "", amount: "")
+        var transaction = TransactionModel(payableTo: "", amount: "", timestamp: "")
         
         refTransaction.observe(DataEventType.value, with: { (snapshot) in
             if snapshot.childrenCount > 0 {
@@ -86,24 +89,26 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                 self.transactionList.removeAll()
                 
                 for record in snapshot.children.allObjects as! [DataSnapshot] {
-                    let transactionObject = record.value as? [String: AnyObject]
-                    let transaction_uid = transactionObject?["userId"]! as! String
+                    let transactionObject = record.value as! [String: AnyObject]
+                    let transaction_uid = transactionObject["userId"]! as! String
                     
                     if (transaction_uid != auth_userId) {
                         continue
                     } else {
-                        let transactionName = (transactionObject?["payableTo"] as! String)
-                        
-                        // TODO: catch exception for invalid input for amount
-                        let transactionAmount = (transactionObject?["amount"] as! String)
-                        
+                        let transactionName = (transactionObject["payableTo"] as! String)
+                        let amount = Double((transactionObject["amount"] as! String))
+                        let transactionAmount = currencyFormatter.string(from: NSNumber(value: amount!))
+                        // TODO: replace timestamp with running balance
+                        let transactionTimestamp = (transactionObject["timestamp"] as! String)
+                
                         if (transactionName != "" && transactionAmount != "") {
-                            let newLine = "\(transactionName), \(transactionAmount)\n"
+                            let newLine = "\(transactionName), \(String(describing: transactionAmount))\n"
                             self.csvText.append(newLine)
                         }
                         
                         transaction = TransactionModel(payableTo: transactionName,
-                                                       amount: transactionAmount)
+                                                       amount: transactionAmount,
+                                                       timestamp: transactionTimestamp)
                     }
                     self.transactionList.append(transaction)
                 }

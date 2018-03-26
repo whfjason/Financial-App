@@ -50,17 +50,18 @@ class ExpenseRecordViewController: UIViewController {
     }
     
     func addTransactionToDB() {
-        
         let uid = Auth.auth().currentUser!.uid;
         let ref = dbReference.child("transaction")
         let tid = ref.childByAutoId().key
         let transactionRef = ref.child(tid)
-        let timestamp = NSDate().timeIntervalSince1970  // defaulted UTC time
+      
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        let timestamp = formatter.string(from: date)
+        
         transactionAmount.text! = (transactionAmount.text?.replacingOccurrences(of: " ", with: ""))!
         payableTo.text! = (payableTo.text?.replacingOccurrences(of: " ", with: ""))!
-        
-        
-        
         
         let countdots = transactionAmount.text!
         let cont = countdots.components(separatedBy:".")
@@ -93,19 +94,9 @@ class ExpenseRecordViewController: UIViewController {
                 transactionRef.updateChildValues(transactionDetails)
                 
             }
-            
-            
-            
-        }
-        
+    
+        }        
     }
-    
-    
-    
-    
-    
-    
-    
     
     
     func createAccountPicker() {
@@ -142,7 +133,7 @@ class ExpenseRecordViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = "Transaction Records"
+        navigationItem.title = "Transactions"
     }
 }
 

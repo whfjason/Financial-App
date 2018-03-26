@@ -25,7 +25,8 @@ class TransactionModel {
 //        self.amount = amount
 //    }
     
-    init(payableTo: String?, amount: String?) {
+    init(payableTo: String?, amount: String?, timestamp: String?) {
+        self.timestamp = timestamp
         self.payableTo = payableTo
         self.amount = amount
     }
