@@ -77,7 +77,6 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
         currencyFormatter.numberStyle = .currency
         currencyFormatter.locale = Locale.current
         
-        
         refTransaction = Database.database().reference().child("transaction")
         let auth_userId = Auth.auth().currentUser!.uid
         authEmail = Auth.auth().currentUser!.email!
@@ -97,12 +96,17 @@ class displayTransactionRecordViewController: UIViewController, UITableViewDeleg
                     } else {
                         let transactionName = (transactionObject["payableTo"] as! String)
                         let amount = Double((transactionObject["amount"] as! String))
-                        let transactionAmount = currencyFormatter.string(from: NSNumber(value: amount!))
+                        let transactionAmount = currencyFormatter.string(from: NSNumber(value: amount!))!
+                        
                         // TODO: replace timestamp with running balance
                         let transactionTimestamp = (transactionObject["timestamp"] as! String)
                 
                         if (transactionName != "" && transactionAmount != "") {
                             let newLine = "\(transactionName), \(String(describing: transactionAmount))\n"
+                            
+                            // debug
+                            print(newLine)
+                            
                             self.csvText.append(newLine)
                         }
                         
