@@ -65,24 +65,23 @@ class ExpenseRecordViewController: UIViewController {
         
         let countdots = transactionAmount.text!
         let cont = countdots.components(separatedBy:".")
-        let x = cont.count-1
+        let x = cont.count - 1
         
-        if x > 1 || transactionAmount.text! == "."
+        if x > 1 || transactionAmount.text! == "." || !(transactionAmount.text!.isValidAmount)
         {
-            let alert = UIAlertController(title: "Alert", message: "check dots", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Alert", message: "Invalid Input", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-        }else{
+        } else {
             transactionAmount.text! = remove(text: (transactionAmount.text)!)
             payableTo.text! = remove(text: (payableTo.text)!)
             
-            
-            if((accountType.text)==""||(transactionAmount.text)==""||(payableTo.text)==""){
+            if((accountType.text) == ""||(transactionAmount.text) == ""||(payableTo.text) == ""){
                 let alert = UIAlertController(title: "Alert", message: "no null value", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
-                
-            }else{
+
+            } else {
                 transactionAmount.text! = remove(text: (transactionAmount.text)!)
                 payableTo.text! = remove(text: (payableTo.text)!)
                 let transactionDetails = ["transactionId": tid,
@@ -92,10 +91,8 @@ class ExpenseRecordViewController: UIViewController {
                                           "fromAccount": accountType.text! as String,
                                           "amount": transactionAmount.text! as String] as [String : Any]
                 transactionRef.updateChildValues(transactionDetails)
-                
             }
-    
-        }        
+        }
     }
     
     
@@ -137,8 +134,6 @@ class ExpenseRecordViewController: UIViewController {
     }
 }
 
-
-
 extension ExpenseRecordViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -156,5 +151,12 @@ extension ExpenseRecordViewController: UIPickerViewDelegate, UIPickerViewDataSou
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedAccount = account[row]
         accountType.text = selectedAccount
+    }
+}
+
+extension String {
+    var isValidAmount: Bool {
+        let char: Set<Character> = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."]
+        return Set(self.characters).isSubset(of: char)
     }
 }

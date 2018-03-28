@@ -49,10 +49,7 @@ class InterestRateViewController: UIViewController, GetChartData {
             Compound.text! = (Compound.text?.replacingOccurrences(of: " ", with: ""))!
             Interest.text! = (Interest.text?.replacingOccurrences(of: " ", with: ""))!
             Duration.text! = (Duration.text?.replacingOccurrences(of: " ", with: ""))!
-            
-            
-            
-            
+
             
             let countdots = Principal.text!
             let cont = countdots.components(separatedBy:".")
@@ -61,7 +58,7 @@ class InterestRateViewController: UIViewController, GetChartData {
             if x > 1 || Principal.text! == "."
             {
                 Result.text = "dots!"
-            }else{
+            } else {
                 
                 Principal.text! = remove(text: (Principal.text)!)
                 Compound.text! = remove(text: (Compound.text)!)
@@ -106,16 +103,9 @@ class InterestRateViewController: UIViewController, GetChartData {
                         Result.text = "Wrong input in the variables, no negative!"
                     }
                 }
-                
-                
-                
             }
-            
         }
-        
-        
-        
-        
+
     }
     
     func remove(text: String) -> String {
