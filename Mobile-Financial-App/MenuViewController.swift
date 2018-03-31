@@ -7,12 +7,14 @@
 //
 
 import UIKit
-import Firebase
-import QuartzCore
+
 
 class MenuViewController: UIViewController {
-    
- 
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+    
 }
 

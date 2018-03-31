@@ -18,6 +18,7 @@
 		0F46AF122036E02B00844033 /* passwordChange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF112036E02B00844033 /* passwordChange.storyboard */; };
 		0F46AF142036E07100844033 /* eric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46AF132036E07100844033 /* eric.storyboard */; };
 		0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE21420350DB900C26081 /* LoginTextField.swift */; };
+		0FE7FFB82068721700989CF9 /* DisplayTransactionRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE7FFB72068721700989CF9 /* DisplayTransactionRecord.storyboard */; };
 		4C068A07203BB87600A2E688 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		4C07C9F0205249D900501C87 /* paybillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07C9ED205249D900501C87 /* paybillsViewController.swift */; };
 		4C07C9F1205249D900501C87 /* paybills.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C07C9EE205249D900501C87 /* paybills.storyboard */; };
@@ -30,7 +31,6 @@
 		BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB687D04204E622700E440C1 /* InterestRate.storyboard */; };
 		BBB26C2C204E135900D05A30 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB26C2B204E135900D05A30 /* Menu.storyboard */; };
 		BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB26C2D204E170200D05A30 /* MenuViewController.swift */; };
-		CB32B52A204F370C0096290D /* DisplayTransactionRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */; };
 		CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B528204F370C0096290D /* TransactionModel.swift */; };
 		CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */; };
 		CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */; };
@@ -80,6 +80,7 @@
 		0F46AF112036E02B00844033 /* passwordChange.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = passwordChange.storyboard; sourceTree = "<group>"; };
 		0F46AF132036E07100844033 /* eric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = eric.storyboard; sourceTree = "<group>"; };
 		0FBFE21420350DB900C26081 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		0FE7FFB72068721700989CF9 /* DisplayTransactionRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayTransactionRecord.storyboard; sourceTree = "<group>"; };
 		2B3843273F9500D55C79A07E /* Pods_Mobile_Financial_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Financial_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C07C9ED205249D900501C87 /* paybillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paybillsViewController.swift; sourceTree = "<group>"; };
 		4C07C9EE205249D900501C87 /* paybills.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = paybills.storyboard; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		BB687D04204E622700E440C1 /* InterestRate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InterestRate.storyboard; sourceTree = "<group>"; };
 		BBB26C2B204E135900D05A30 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		BBB26C2D204E170200D05A30 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayTransactionRecord.storyboard; sourceTree = "<group>"; };
 		CB32B528204F370C0096290D /* TransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayTransactionRecordViewController.swift; sourceTree = "<group>"; };
@@ -161,8 +161,8 @@
 				CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */,
 				0F3065332034FD37007C2970 /* AppDelegate.swift */,
 				0FBFE21420350DB900C26081 /* LoginTextField.swift */,
-				CB32B527204F370C0096290D /* DisplayTransactionRecord.storyboard */,
 				CB32B528204F370C0096290D /* TransactionModel.swift */,
+				0FE7FFB72068721700989CF9 /* DisplayTransactionRecord.storyboard */,
 				CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */,
 				CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */,
 				0F3065372034FD37007C2970 /* Main.storyboard */,
@@ -300,6 +300,7 @@
 				TargetAttributes = {
 					0F30652F2034FD37007C2970 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NN3N3S3P26;
 						ProvisioningStyle = Automatic;
 					};
 					0F3065432034FD37007C2970 = {
@@ -348,9 +349,9 @@
 				0F46AF142036E07100844033 /* eric.storyboard in Resources */,
 				0F30653E2034FD37007C2970 /* LaunchScreen.storyboard in Resources */,
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
-				CB32B52A204F370C0096290D /* DisplayTransactionRecord.storyboard in Resources */,
 				CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */,
 				BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */,
+				0FE7FFB82068721700989CF9 /* DisplayTransactionRecord.storyboard in Resources */,
 				4C07C9F1205249D900501C87 /* paybills.storyboard in Resources */,
 				0F3065392034FD37007C2970 /* Main.storyboard in Resources */,
 			);
@@ -534,7 +535,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -586,7 +587,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -616,10 +617,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NN3N3S3P26;
 				INFOPLIST_FILE = "Mobile-Financial-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mcy;
+				PRODUCT_BUNDLE_IDENTIFIER = "COSC310.Mobile-Financial-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -634,10 +635,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				"DEBUG_INFORMATION_FORMAT[sdk=*]" = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NN3N3S3P26;
 				INFOPLIST_FILE = "Mobile-Financial-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mcy;
+				PRODUCT_BUNDLE_IDENTIFIER = "COSC310.Mobile-Financial-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
