@@ -11,6 +11,8 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 
+
+
 class passwordChange: UIViewController {
     
     @IBOutlet weak var newPwField: UITextField!
@@ -26,15 +28,30 @@ class passwordChange: UIViewController {
     }
     
     func changePW() {
+        newPwField.text! = (newPwField.text?.replacingOccurrences(of: " ", with: ""))!
+        reNewPwField.text! = (reNewPwField.text?.replacingOccurrences(of: " ", with: ""))!
+
         let nPw = newPwField.text!
         let rePW = reNewPwField.text!
-
+        
+        
+        
         if (nPw == rePW) {
-            Auth.auth().currentUser!.updatePassword(to: nPw) { (error) in
-                let missMatchAlert = UIAlertController(title: "Password Changed!", message: "Your passwords are successfully", preferredStyle: .alert)
-                missMatchAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
-                self.present(missMatchAlert, animated: true, completion: nil)
+            if(nPw == "" && rePW == ""){
+                let passwordChangedAlert = UIAlertController(title: "null value!", message: "no empty value/space!", preferredStyle: .alert)
+                passwordChangedAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
+                self.present(passwordChangedAlert, animated: true, completion: nil)
                 return
+                
+            }else{
+                Auth.auth().currentUser!.updatePassword(to: nPw) { (error) in
+                    let missMatchAlert = UIAlertController(title: "Password Changed!", message: "Your passwords are successfully", preferredStyle: .alert)
+                    missMatchAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
+                    self.present(missMatchAlert, animated: true, completion: nil)
+                    return
+                    
+                    
+                }
             }
         } else {
             let passwordChangedAlert = UIAlertController(title: "Password Mismatched!", message: "Your passwords are not matched!", preferredStyle: .alert)
@@ -42,6 +59,11 @@ class passwordChange: UIViewController {
             self.present(passwordChangedAlert, animated: true, completion: nil)
             return
         }
+ 
+    
+       
+    
+    
     }
     
 }
