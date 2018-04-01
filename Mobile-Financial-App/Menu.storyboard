@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PAg-4b-CL2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PAg-4b-CL2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <development version="8000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -126,6 +125,14 @@
                                     <segue destination="0jn-hH-qCi" kind="show" id="Lzi-9Q-X8U"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi5-ZD-Gmu">
+                                <rect key="frame" x="305" y="140" width="54" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="email_icon"/>
+                                <connections>
+                                    <segue destination="QZ1-BI-fsb" kind="show" id="658-tF-vvS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -133,6 +140,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYE-on-xIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1042.4000000000001" y="-334.18290854572717"/>
+        </scene>
+        <!--email-->
+        <scene sceneID="wJ3-pS-nVs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="email" id="QZ1-BI-fsb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15D-hB-7Ia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-473" y="-636"/>
         </scene>
         <!--camera-->
         <scene sceneID="J8p-Q3-kw2">
@@ -177,6 +192,7 @@
     </scenes>
     <resources>
         <image name="coins" width="1500" height="1000"/>
+        <image name="email_icon" width="626" height="626"/>
         <image name="menu" width="256" height="256"/>
         <image name="photo-camera" width="256" height="256"/>
     </resources>

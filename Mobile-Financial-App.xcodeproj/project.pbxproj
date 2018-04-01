@@ -26,6 +26,8 @@
 		4C16F9C2203D140B00A2B4C0 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		4CE1EDC82064947F00A63186 /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1EDC72064947F00A63186 /* cameraViewController.swift */; };
 		4CE1EDCA2064A3CD00A63186 /* camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE1EDC92064A3CD00A63186 /* camera.storyboard */; };
+		A2B9350D2070702400A7A616 /* email.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B9350C2070702400A7A616 /* email.storyboard */; };
+		A2B9350F2070704700A7A616 /* emailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B9350E2070704700A7A616 /* emailViewController.swift */; };
 		BB193C6A204F560900142551 /* InteractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193C69204F560900142551 /* InteractViewController.swift */; };
 		BB193C6C204F56E800142551 /* InteractStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */; };
 		BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB687D04204E622700E440C1 /* InterestRate.storyboard */; };
@@ -89,6 +91,8 @@
 		4CE1EDC92064A3CD00A63186 /* camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = camera.storyboard; sourceTree = "<group>"; };
 		5BC5768264E9DDDE640B96F5 /* Pods-Mobile-Financial-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.release.xcconfig"; sourceTree = "<group>"; };
 		8BB5B68F92D4D4A9256F0952 /* Pods-Mobile-Financial-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-Financial-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile-Financial-App/Pods-Mobile-Financial-App.debug.xcconfig"; sourceTree = "<group>"; };
+		A2B9350C2070702400A7A616 /* email.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = email.storyboard; sourceTree = "<group>"; };
+		A2B9350E2070704700A7A616 /* emailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailViewController.swift; sourceTree = "<group>"; };
 		BB193C69204F560900142551 /* InteractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractViewController.swift; sourceTree = "<group>"; };
 		BB193C6B204F56E800142551 /* InteractStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InteractStoryBoard.storyboard; sourceTree = "<group>"; };
 		BB687D04204E622700E440C1 /* InterestRate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InterestRate.storyboard; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				4C07C9ED205249D900501C87 /* paybillsViewController.swift */,
 				4CE1EDC92064A3CD00A63186 /* camera.storyboard */,
 				4CE1EDC72064947F00A63186 /* cameraViewController.swift */,
+				A2B9350C2070702400A7A616 /* email.storyboard */,
+				A2B9350E2070704700A7A616 /* emailViewController.swift */,
 			);
 			path = "Mobile-Financial-App";
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 				0F30653B2034FD37007C2970 /* Assets.xcassets in Resources */,
 				CBC54CE82037018B00C00CE0 /* ExpenseReportStoryBoard.storyboard in Resources */,
 				BB687D05204E622700E440C1 /* InterestRate.storyboard in Resources */,
+				A2B9350D2070702400A7A616 /* email.storyboard in Resources */,
 				0FE7FFB82068721700989CF9 /* DisplayTransactionRecord.storyboard in Resources */,
 				4C07C9F1205249D900501C87 /* paybills.storyboard in Resources */,
 				0F3065392034FD37007C2970 /* Main.storyboard in Resources */,
@@ -455,6 +462,7 @@
 				4C16F9C2203D140B00A2B4C0 /* (null) in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
 				CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */,
+				A2B9350F2070704700A7A616 /* emailViewController.swift in Sources */,
 				CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */,
 				CBC5F23E203D16B800A60E78 /* ShowBalance.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
