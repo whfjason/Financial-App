@@ -131,7 +131,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="email_icon"/>
                                 <connections>
-                                    <segue destination="QZ1-BI-fsb" kind="show" id="658-tF-vvS"/>
+                                    <segue destination="QZ1-BI-fsb" kind="show" identifier="email" id="658-tF-vvS"/>
                                 </connections>
                             </button>
                         </subviews>

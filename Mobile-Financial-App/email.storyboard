@@ -63,15 +63,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Message"/>
                                 <connections>
-                                    <action selector="SendMessage:" destination="Fzc-di-LaE" eventType="touchUpInside" id="8Uz-V7-LoR"/>
+                                    <action selector="SendMessage:" destination="Fzc-di-LaE" eventType="touchUpInside" id="FWX-ae-07B"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="Body" destination="64H-8n-rTa" id="Cof-IW-2XY"/>
-                        <outlet property="Subject" destination="oab-P8-LoW" id="hIo-wh-SmH"/>
+                        <outlet property="MessageBody" destination="64H-8n-rTa" id="2aK-oU-4sT"/>
+                        <outlet property="Subject" destination="oab-P8-LoW" id="RlT-LB-baX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9r1-A8-qec" userLabel="First Responder" sceneMemberID="firstResponder"/>
