@@ -5,8 +5,8 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+        <development version="8000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +14,10 @@
         <scene sceneID="qFt-g2-PtE">
             <objects>
                 <viewController id="Fzc-di-LaE" customClass="emailViewController" customModule="Mobile_Financial_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hXT-mx-p3w"/>
+                        <viewControllerLayoutGuide type="bottom" id="muD-de-Lfi"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ths-tj-ypg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +68,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="4aj-On-mvi"/>
                     </view>
                     <connections>
                         <outlet property="Body" destination="64H-8n-rTa" id="Cof-IW-2XY"/>
