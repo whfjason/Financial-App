@@ -22,24 +22,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eduardo-santos-387145-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="TtZ-aC-C1M">
+                            <imageView userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="town" translatesAutoresizingMaskIntoConstraints="NO" id="TtZ-aC-C1M">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dollar-sign-and-piles-of-coins" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-C9-NTG">
-                                <rect key="frame" x="111" y="75" width="142" height="132"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-C9-NTG">
+                                <rect key="frame" x="116" y="76" width="142" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5em-gG-wjU">
-                                <rect key="frame" x="229" y="355" width="118" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="RBC_Bank_logo"/>
-                                <connections>
-                                    <action selector="RBC:" destination="uFL-Ek-ANN" eventType="touchUpInside" id="qHV-eA-byp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sx1-aY-0EO">
-                                <rect key="frame" x="208" y="505" width="161" height="112"/>
+                                <rect key="frame" x="197" y="399" width="161" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="1280px-HSBC_logo_(2018).svg-1"/>
                                 <connections>
@@ -47,11 +39,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82w-UV-099">
-                                <rect key="frame" x="224" y="215" width="123" height="118"/>
+                                <rect key="frame" x="44" y="235" width="123" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="CIBC_logo.svg"/>
                                 <connections>
                                     <action selector="CIBC:" destination="uFL-Ek-ANN" eventType="touchUpInside" id="K9m-hx-7KF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUM-4i-4b1">
+                                <rect key="frame" x="33" y="390" width="145" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Bitcoin-icon"/>
+                                <connections>
+                                    <action selector="Bitcoin:" destination="uFL-Ek-ANN" eventType="touchUpInside" id="biL-gW-W78"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5em-gG-wjU">
+                                <rect key="frame" x="218" y="235" width="118" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="RBC_Bank_logo"/>
+                                <connections>
+                                    <action selector="RBC:" destination="uFL-Ek-ANN" eventType="touchUpInside" id="qHV-eA-byp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,9 +73,10 @@
     </scenes>
     <resources>
         <image name="1280px-HSBC_logo_(2018).svg-1" width="342" height="173"/>
+        <image name="Bitcoin-icon" width="256" height="256"/>
         <image name="CIBC_logo.svg" width="560" height="512"/>
         <image name="RBC_Bank_logo" width="227" height="274"/>
-        <image name="dollar-sign-and-piles-of-coins" width="256" height="256"/>
-        <image name="eduardo-santos-387145-unsplash" width="1824" height="2736"/>
+        <image name="bank" width="256" height="256"/>
+        <image name="town" width="635" height="950"/>
     </resources>
 </document>

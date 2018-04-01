@@ -26,12 +26,17 @@ class InteractViewController: UIViewController {
     }
     
     @IBAction func HSBC(_ sender: UIButton) {
-        if let url = NSURL(string:"https://www.hsbc.com"){
+        if let url = NSURL(string:"www.hsbc.com"){
             UIApplication.shared.open(url as URL)
         }
     
     }
     
+    @IBAction func Bitcoin(_ sender: UIButton) {
+        if let url = NSURL(string:"https://bitcoin.org/en/"){
+            UIApplication.shared.open(url as URL)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

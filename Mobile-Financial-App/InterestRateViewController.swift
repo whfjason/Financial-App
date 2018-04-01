@@ -69,11 +69,14 @@ class InterestRateViewController: UIViewController, GetChartData {
                     Result.text = "check your variables!"
                     
                 }else{
+                    
                     var p = Double(Principal.text!)
                     let n = Double(Compound.text!)
                     let r = Double(Double(Interest.text!)! / 100)
                     let T = Double(Duration.text!)
                     let test = 0.0;
+                   
+                  
                     
                     if(p!>=test||n!>=test||r>=test||T!>=test){
                         let initialPrincipal = String(p!)
@@ -82,7 +85,7 @@ class InterestRateViewController: UIViewController, GetChartData {
                         let calendar = Calendar.current
                         let year = calendar.component(.year, from: date)
                         let numberOfYears = Int(T!)
-                        
+                        print(numberOfYears);
                         compoundDuration.append(1)
                         accumulatedReturn.append(p!)
                         
