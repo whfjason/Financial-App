@@ -47,7 +47,7 @@ class passwordChange: UIViewController {
             if error == nil{
                 //case1: the new password is same as the current one
                 if(cPw == nPw){
-                    let sameAlert = UIAlertController(title: "all the same", message: "Your new password should distinct from the current one", preferredStyle: .alert)
+                    let sameAlert = UIAlertController(title: "all the same", message: "Your new password should be distinct from the current one", preferredStyle: .alert)
                     sameAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
                     self.present(sameAlert, animated: true, completion: nil)
                     return
@@ -61,7 +61,7 @@ class passwordChange: UIViewController {
                     }else{
                         //case2.2: password changes successfully
                         Auth.auth().currentUser!.updatePassword(to: nPw) { (error) in
-                            let missMatchAlert = UIAlertController(title: "Password Changed!", message: "Your passwords are successfully", preferredStyle: .alert)
+                            let missMatchAlert = UIAlertController(title: "Password Changed!", message: "Password Changed successfully", preferredStyle: .alert)
                             missMatchAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
                             self.present(missMatchAlert, animated: true, completion: nil)
                             return
@@ -76,7 +76,7 @@ class passwordChange: UIViewController {
                 }
             }else{
                 //case3: failed verification
-                let cannotVarifyAlert = UIAlertController(title: "Cannot Verify", message: "Please enter the correct current possward", preferredStyle: .alert)
+                let cannotVarifyAlert = UIAlertController(title: "Cannot Verify", message: "Please enter the correct current password", preferredStyle: .alert)
                 cannotVarifyAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
                 self.present(cannotVarifyAlert, animated: true, completion: nil)
                 return
