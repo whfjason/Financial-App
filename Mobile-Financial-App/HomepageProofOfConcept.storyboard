@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lK7-XN-Icc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Accounts-->
+        <scene sceneID="XeT-Bq-LPx">
+            <objects>
+                <tableViewController id="lK7-XN-Icc" customClass="AccountTableViewController" customModule="Mobile_Financial_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="f1u-fj-uQy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountTableViewCell" rowHeight="85" id="3nl-GA-sGx" customClass="AccountTableViewCell" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3nl-GA-sGx" id="PCs-4n-2se" customClass="AccountTableViewCell" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deposits Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHX-Y1-Twn">
+                                            <rect key="frame" x="8" y="8" width="359" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chequing " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8I-uo-xvr">
+                                            <rect key="frame" x="8" y="27" width="359" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$3,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UT1-Yr-5Rh">
+                                            <rect key="frame" x="8" y="45" width="359" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" red="0.3441088835452541" green="0.7739030116580311" blue="0.37362759910724902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="accountBalance" destination="UT1-Yr-5Rh" id="34N-Sr-xjc"/>
+                                    <outlet property="accountNameLabel" destination="mHX-Y1-Twn" id="GcS-Z0-Nkh"/>
+                                    <outlet property="accountTypeLabel" destination="c8I-uo-xvr" id="ibv-ny-acc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lK7-XN-Icc" id="cmQ-hi-jxO"/>
+                            <outlet property="delegate" destination="lK7-XN-Icc" id="9jV-mT-bWQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Accounts" id="oqa-8Z-qA8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SDo-yS-aam">
+                            <connections>
+                                <segue destination="qpc-yQ-kd9" kind="show" id="NVD-r2-I59"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="tableViewAccount" destination="f1u-fj-uQy" id="WyY-yz-84a"/>
+                        <segue destination="fvh-xW-9ZO" kind="show" identifier="transactionRecordSegue" id="943-GA-5kt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUv-Es-XtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="-6"/>
+        </scene>
+        <!--Transaction-->
+        <scene sceneID="TYA-qE-Tlt">
+            <objects>
+                <tableViewController id="fvh-xW-9ZO" customClass="transactionTableViewController" customModule="Mobile_Financial_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="U2t-Jk-VJ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionTableViewCell" rowHeight="95" id="8jf-J8-ESL" customClass="TransactionTableViewCell" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8jf-J8-ESL" id="XZj-nb-sB7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 1, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijo-Bv-u2g">
+                                            <rect key="frame" x="18" y="8" width="359" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$2997.82" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDR-tf-vpy">
+                                            <rect key="frame" x="224" y="58" width="143" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.098688165288362675" green="0.10967859455958551" blue="0.050876851761815514" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIM HORTON " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FS-2P-bGL">
+                                            <rect key="frame" x="18" y="35" width="230" height="46"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-$2.18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyh-or-VGt">
+                                            <rect key="frame" x="199" y="35" width="184" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="0.72886981865284972" green="0.14935928912498195" blue="0.26151235341285051" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="transactionAmountLabel" destination="zyh-or-VGt" id="G8T-fM-J5V"/>
+                                    <outlet property="transactionBalanceLabel" destination="ZDR-tf-vpy" id="jk5-0o-iaD"/>
+                                    <outlet property="transactionDateLabel" destination="Ijo-Bv-u2g" id="aiN-CI-f2u"/>
+                                    <outlet property="transactionNameLabel" destination="8FS-2P-bGL" id="8fG-2F-Yxj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fvh-xW-9ZO" id="jdy-GY-nIk"/>
+                            <outlet property="delegate" destination="fvh-xW-9ZO" id="Yub-Hx-tWR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Transaction" id="7xg-nr-b3y">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="CcD-J8-sBm">
+                                <connections>
+                                    <action selector="addTransactionVC:" destination="fvh-xW-9ZO" id="p3e-0q-QWH"/>
+                                    <segue destination="Cmd-dX-zeC" kind="show" identifier="addTransactionSegue" id="vsA-j4-ujU"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="action" id="31k-dz-PKx"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableViewTransaction" destination="U2t-Jk-VJ5" id="bC3-ST-Qmg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6x-Ks-I6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1573.5999999999999" y="-7.6461769115442282"/>
+        </scene>
+        <!--Create New Account View Controller-->
+        <scene sceneID="mCa-MO-00i">
+            <objects>
+                <viewController id="qpc-yQ-kd9" customClass="CreateNewAccountViewController" customModule="Mobile_Financial_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A70-0O-Vr9"/>
+                        <viewControllerLayoutGuide type="bottom" id="ed8-9x-89k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zdd-CS-YuF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Balance (i.e. $3,021.75)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ect-Qg-dKz" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                <rect key="frame" x="16" y="334" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zy1-6o-xPV" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                <rect key="frame" x="16" y="266" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name (i.e. RBC Rewards Credit Card)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mti-dy-3E4" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                <rect key="frame" x="16" y="203" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpT-RT-yaO">
+                                <rect key="frame" x="113" y="402" width="148" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="addAccount:" destination="qpc-yQ-kd9" eventType="touchUpInside" id="sk9-AD-bYx"/>
+                                    <segue destination="lK7-XN-Icc" kind="show" identifier="redirectToAccountSegue" id="dDB-w5-HSg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountBalance" destination="Ect-Qg-dKz" id="Qi9-RC-NhA"/>
+                        <outlet property="accountName" destination="mti-dy-3E4" id="Nuq-Ft-AUR"/>
+                        <outlet property="accountType" destination="Zy1-6o-xPV" id="A2G-vm-7si"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kv8-JO-H7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="692"/>
+        </scene>
+        <!--Add Transaction View Controller-->
+        <scene sceneID="30w-IT-Sb0">
+            <objects>
+                <viewController id="Cmd-dX-zeC" customClass="AddTransactionViewController" customModule="Mobile_Financial_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="23U-sb-wZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="gmW-QX-3RH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OGW-4s-23w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Transaction Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99T-03-iXq" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                <rect key="frame" x="16" y="335" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount (i.e. $2.89)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vN-Ta-Y3p" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                <rect key="frame" x="16" y="266" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name (i.e. TIM HORTON)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3B-aw-09M" customClass="LoginTextField" customModule="Mobile_Financial_App" customModuleProvider="target">
+                                <rect key="frame" x="16" y="203" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS0-gg-smI">
+                                <rect key="frame" x="113" y="402" width="148" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Transaction"/>
+                                <connections>
+                                    <action selector="addAccount:" destination="qpc-yQ-kd9" eventType="touchUpInside" id="kWL-Fm-fIh"/>
+                                    <action selector="addTransaction:" destination="Cmd-dX-zeC" eventType="touchUpInside" id="ogw-yo-uht"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="transactionAmount" destination="6vN-Ta-Y3p" id="3hL-Mx-LQj"/>
+                        <outlet property="transactionName" destination="I3B-aw-09M" id="oBg-Ht-1aP"/>
+                        <outlet property="transactionType" destination="99T-03-iXq" id="Wii-o1-CVU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wen-68-jST" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="693"/>
+        </scene>
+    </scenes>
+</document>

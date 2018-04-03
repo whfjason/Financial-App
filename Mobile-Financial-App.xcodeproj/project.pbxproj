@@ -45,6 +45,15 @@
 		CBC54CEE20370E3E00C00CE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */; };
 		CBC5F23D203D16B800A60E78 /* passwordChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC5F23B203D16B800A60E78 /* passwordChange.swift */; };
 		CBC5F23E203D16B800A60E78 /* ShowBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC5F23C203D16B800A60E78 /* ShowBalance.swift */; };
+		CBCC0F3B2074232400995360 /* HomepageProofOfConcept.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCC0F3A2074232400995360 /* HomepageProofOfConcept.storyboard */; };
+		CBCC0F3D2074238F00995360 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC0F3C2074238F00995360 /* Account.swift */; };
+		CBCC0F3F2074239800995360 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC0F3E2074239800995360 /* AccountTableViewCell.swift */; };
+		CBCC0F41207423A100995360 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC0F40207423A100995360 /* AccountTableViewController.swift */; };
+		CBCC0F43207423A900995360 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC0F42207423A900995360 /* AddTransactionViewController.swift */; };
+		CBCC0F45207423AF00995360 /* CreateNewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC0F44207423AF00995360 /* CreateNewAccountViewController.swift */; };
+		CBCC0F472074240900995360 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC0F462074240900995360 /* Transaction.swift */; };
+		CBCC0F492074242100995360 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC0F482074242100995360 /* TransactionTableViewCell.swift */; };
+		CBCC0F4B2074242E00995360 /* transactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC0F4A2074242E00995360 /* transactionTableViewController.swift */; };
 		DD65718FFDDADF69484EA713 /* Pods_Mobile_Financial_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3843273F9500D55C79A07E /* Pods_Mobile_Financial_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +120,15 @@
 		CBC54CED20370E3E00C00CE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CBC5F23B203D16B800A60E78 /* passwordChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordChange.swift; sourceTree = "<group>"; };
 		CBC5F23C203D16B800A60E78 /* ShowBalance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowBalance.swift; sourceTree = "<group>"; };
+		CBCC0F3A2074232400995360 /* HomepageProofOfConcept.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomepageProofOfConcept.storyboard; sourceTree = "<group>"; };
+		CBCC0F3C2074238F00995360 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		CBCC0F3E2074239800995360 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		CBCC0F40207423A100995360 /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		CBCC0F42207423A900995360 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
+		CBCC0F44207423AF00995360 /* CreateNewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewAccountViewController.swift; sourceTree = "<group>"; };
+		CBCC0F462074240900995360 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CBCC0F482074242100995360 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		CBCC0F4A2074242E00995360 /* transactionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = transactionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +191,15 @@
 				CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */,
 				CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */,
 				0F3065372034FD37007C2970 /* Main.storyboard */,
+				CBCC0F3A2074232400995360 /* HomepageProofOfConcept.storyboard */,
+				CBCC0F3C2074238F00995360 /* Account.swift */,
+				CBCC0F3E2074239800995360 /* AccountTableViewCell.swift */,
+				CBCC0F40207423A100995360 /* AccountTableViewController.swift */,
+				CBCC0F42207423A900995360 /* AddTransactionViewController.swift */,
+				CBCC0F44207423AF00995360 /* CreateNewAccountViewController.swift */,
+				CBCC0F462074240900995360 /* Transaction.swift */,
+				CBCC0F482074242100995360 /* TransactionTableViewCell.swift */,
+				CBCC0F4A2074242E00995360 /* transactionTableViewController.swift */,
 				0F30653A2034FD37007C2970 /* Assets.xcassets */,
 				0F3065352034FD37007C2970 /* ViewController.swift */,
 				0F30653C2034FD37007C2970 /* LaunchScreen.storyboard */,
@@ -365,6 +392,7 @@
 				0FE7FFB82068721700989CF9 /* DisplayTransactionRecord.storyboard in Resources */,
 				4C07C9F1205249D900501C87 /* paybills.storyboard in Resources */,
 				0F3065392034FD37007C2970 /* Main.storyboard in Resources */,
+				CBCC0F3B2074232400995360 /* HomepageProofOfConcept.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,26 +479,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCC0F4B2074242E00995360 /* transactionTableViewController.swift in Sources */,
 				CBBAEABD2059FD8E00E9F7D7 /* InterestRateViewController.swift in Sources */,
 				CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */,
 				CBBAEABC2059FD8E00E9F7D7 /* InterestLineChart.swift in Sources */,
 				CBC5F23D203D16B800A60E78 /* passwordChange.swift in Sources */,
 				BBB26C2E204E170200D05A30 /* MenuViewController.swift in Sources */,
+				CBCC0F3F2074239800995360 /* AccountTableViewCell.swift in Sources */,
 				0FBFE21520350DB900C26081 /* LoginTextField.swift in Sources */,
 				CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */,
 				4CE1EDC82064947F00A63186 /* cameraViewController.swift in Sources */,
 				4C07C9F0205249D900501C87 /* paybillsViewController.swift in Sources */,
+				CBCC0F45207423AF00995360 /* CreateNewAccountViewController.swift in Sources */,
 				BB193C6A204F560900142551 /* InteractViewController.swift in Sources */,
 				4C07C9F2205249D900501C87 /* KVCipher.swift in Sources */,
 				4C068A07203BB87600A2E688 /* (null) in Sources */,
 				4C16F9C2203D140B00A2B4C0 /* (null) in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
+				CBCC0F492074242100995360 /* TransactionTableViewCell.swift in Sources */,
+				CBCC0F43207423A900995360 /* AddTransactionViewController.swift in Sources */,
 				CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */,
+				CBCC0F472074240900995360 /* Transaction.swift in Sources */,
 				A2B9350F2070704700A7A616 /* emailViewController.swift in Sources */,
+				CBCC0F41207423A100995360 /* AccountTableViewController.swift in Sources */,
 				CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */,
 				CBC5F23E203D16B800A60E78 /* ShowBalance.swift in Sources */,
 				0F3065342034FD37007C2970 /* AppDelegate.swift in Sources */,
 				CBC54CEA20370BEE00C00CE0 /* RegistrationViewController.swift in Sources */,
+				CBCC0F3D2074238F00995360 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
