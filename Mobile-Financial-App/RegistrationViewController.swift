@@ -19,8 +19,6 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var nameField: UITextField!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         if FirebaseApp.app() == nil {

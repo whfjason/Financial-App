@@ -6,8 +6,6 @@
 //  Copyright © 2018 55487145. All rights reserved.
 //
 
-// TODO:bugs fixed
-
 import UIKit
 import Foundation
 import Charts
@@ -41,16 +39,13 @@ class InterestRateViewController: UIViewController, GetChartData {
         if(Principal==nil||Compound==nil||Interest==nil||Duration==nil){
             Result.text = "must have variables!"
             
-        }else{
-            
-            
-            
+        } else {
+
             Principal.text! = (Principal.text?.replacingOccurrences(of: " ", with: ""))!
             Compound.text! = (Compound.text?.replacingOccurrences(of: " ", with: ""))!
             Interest.text! = (Interest.text?.replacingOccurrences(of: " ", with: ""))!
             Duration.text! = (Duration.text?.replacingOccurrences(of: " ", with: ""))!
 
-            
             let countdots = Principal.text!
             let cont = countdots.components(separatedBy:".")
             let x = cont.count-1
@@ -108,7 +103,6 @@ class InterestRateViewController: UIViewController, GetChartData {
                 }
             }
         }
-
     }
     
     func remove(text: String) -> String {

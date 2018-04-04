@@ -37,6 +37,7 @@
 		CB32B52B204F370C0096290D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B528204F370C0096290D /* TransactionModel.swift */; };
 		CB32B52C204F370C0096290D /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */; };
 		CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */; };
+		CB52B5FE2074406E001B8785 /* ExpensesAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52B5FD2074406E001B8785 /* ExpensesAnalyticsViewController.swift */; };
 		CBBAEABC2059FD8E00E9F7D7 /* InterestLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAEABA2059FD8E00E9F7D7 /* InterestLineChart.swift */; };
 		CBBAEABD2059FD8E00E9F7D7 /* InterestRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAEABB2059FD8E00E9F7D7 /* InterestRateViewController.swift */; };
 		CBC54CE62036FC6E00C00CE0 /* ExpenseRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */; };
@@ -112,6 +113,7 @@
 		CB32B528204F370C0096290D /* TransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		CB32B529204F370C0096290D /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayTransactionRecordViewController.swift; sourceTree = "<group>"; };
+		CB52B5FD2074406E001B8785 /* ExpensesAnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesAnalyticsViewController.swift; sourceTree = "<group>"; };
 		CBBAEABA2059FD8E00E9F7D7 /* InterestLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestLineChart.swift; sourceTree = "<group>"; };
 		CBBAEABB2059FD8E00E9F7D7 /* InterestRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestRateViewController.swift; sourceTree = "<group>"; };
 		CBC54CE52036FC6E00C00CE0 /* ExpenseRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseRecordViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				CB32B52D204F37280096290D /* displayTransactionRecordViewController.swift */,
 				0F3065372034FD37007C2970 /* Main.storyboard */,
 				CBCC0F3A2074232400995360 /* HomepageProofOfConcept.storyboard */,
+				CB52B5FD2074406E001B8785 /* ExpensesAnalyticsViewController.swift */,
 				CBCC0F3C2074238F00995360 /* Account.swift */,
 				CBCC0F3E2074239800995360 /* AccountTableViewCell.swift */,
 				CBCC0F40207423A100995360 /* AccountTableViewController.swift */,
@@ -496,6 +499,7 @@
 				4C068A07203BB87600A2E688 /* (null) in Sources */,
 				4C16F9C2203D140B00A2B4C0 /* (null) in Sources */,
 				0F3065362034FD37007C2970 /* ViewController.swift in Sources */,
+				CB52B5FE2074406E001B8785 /* ExpensesAnalyticsViewController.swift in Sources */,
 				CBCC0F492074242100995360 /* TransactionTableViewCell.swift in Sources */,
 				CBCC0F43207423A900995360 /* AddTransactionViewController.swift in Sources */,
 				CB32B52E204F37280096290D /* displayTransactionRecordViewController.swift in Sources */,

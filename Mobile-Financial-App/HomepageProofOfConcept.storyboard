@@ -15,6 +15,43 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Expenses Analytics View Controller-->
+        <scene sceneID="yrI-am-TMs">
+            <objects>
+                <viewController id="6ME-xv-TP3" customClass="ExpensesAnalyticsViewController" customModule="Mobile_Financial_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="brF-6m-fCI"/>
+                        <viewControllerLayoutGuide type="bottom" id="qTb-Ph-UUg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jbh-Zy-f0m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Average Expenses for last 30 days:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMQ-R7-5jr">
+                                <rect key="frame" x="16" y="20" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$158.70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaV-sg-fpc">
+                                <rect key="frame" x="16" y="60" width="343" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="averageMonthlyExpense" destination="OaV-sg-fpc" id="EVP-Dq-idW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1S-ff-KJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="692"/>
+        </scene>
         <!--My Accounts-->
         <scene sceneID="XeT-Bq-LPx">
             <objects>
@@ -52,6 +89,14 @@
                                             <color key="textColor" red="0.3441088835452541" green="0.7739030116580311" blue="0.37362759910724902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qz-wf-jXS">
+                                            <rect key="frame" x="156" y="50" width="63" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Analytics"/>
+                                            <connections>
+                                                <segue destination="6ME-xv-TP3" kind="show" id="hHv-t0-Aw8"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -81,7 +126,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUv-Es-XtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="-6"/>
+            <point key="canvasLocation" x="848.79999999999995" y="-6.746626686656672"/>
         </scene>
         <!--Transaction-->
         <scene sceneID="TYA-qE-Tlt">
